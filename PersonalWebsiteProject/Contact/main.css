@@ -1,0 +1,94 @@
+/* Contact Page */
+
+html, body{
+	background-color: #1b3f4d;
+	height: 100%;
+	margin: 0;
+}
+h1{
+	margin-bottom: 35px;
+	font-size: 30px;
+}
+.instructions{
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 85%;
+	font-size: 24px;
+}
+p{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.everythingbutheaderandfooter{
+	min-height: 100%;
+	margin-bottom: -40px;	
+}
+.bigContainer{
+	border: 100px;
+	border-style: groove;
+}
+.container{
+	background-color: #64879a;
+	height: 800px;
+	width: 800px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	vertical-align: middle;
+	border: 100px;
+	border-style: groove;
+	
+}
+.contactForm{
+	margin-top: 50px;
+}
+.label{
+	float: left;
+	padding-right: 73px;
+	margin-left: 92px;
+	width: 33%;
+	text-align: left;
+}
+.input{
+	width: 75%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	display: block;
+	resize: none
+	vertical-align: middle;
+	background-color: white;
+	border-color: black;
+
+}
+.noteBox{
+	background-color: white;
+}
+/*placeholder color*/
+::-webkit-input-placeholder { 
+  color: #64879a;
+
+}
+.fields{
+	max-width: 700px;
+	margin: auto;
+}
+.radioButtons{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.submitButton{
+	margin: 15px;
+	border-radius: 15%;
+}
+.footer{
+	height: 40px;
+	background-color: grey;
+	border-top-width: 3px;
+	border-color: white;
+}

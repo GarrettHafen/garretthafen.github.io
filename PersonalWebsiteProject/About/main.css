@@ -1,0 +1,101 @@
+/* About Page */
+/**{
+	box-sizing: border-box;
+}*/
+html, body{
+	height: 100%;
+	margin: 0;	
+}
+header{
+	margin: 0;
+}
+ul.topTabs {
+	padding-top: 18px;
+	padding-bottom: 16px;
+}
+.topBar {
+  height: 75px;
+  background-color: grey;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-bottom: 5px;
+/*  border-bottom: 1px solid #cc0c0c;*/
+  box-shadow: 0 2px 4px 0 rgba(204, 12, 12,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.topTabs a {
+	display: inline-block;
+	padding: 8px 12px;
+	margin: 0 auto;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	border: 2px solid black;
+	color: black;
+	border-radius: 5px;
+}
+.tab {
+	background-color: #cc0c0c;
+}
+.thumbnailButton{
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	padding-left: 30px;
+	padding-right: 5px;
+	padding-bottom: 7px;
+	padding-top: 6px;
+}
+.homeThumbnail{
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+	border: 2px solid #cc0c0c;
+}
+ a:hover {
+	border-color: #999; /*needs new color*/
+	color: #777;
+}
+body{
+	background-color: #c95858;
+	text-align: center;
+	box-sizing: border-box;
+	margin:0;
+}
+p{
+	color: black;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-left: 5px;
+    margin-right: 5px;
+}
+h1{
+	margin-top: 10px;
+	margin-bottom: 15px;
+
+}
+h2{
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.content{
+	margin: auto;
+	margin-top: 10px;
+	background-color: white;
+	border: 5px solid #cc0c0c;
+}
+.everythingbutheaderandfooter{
+	min-height: 100%;
+	margin-bottom: -40px;	
+}
+.footer{
+	height: 40px;
+	background-color: grey;
+	border-top-width: 3px;
+	border-color: white;
+}
