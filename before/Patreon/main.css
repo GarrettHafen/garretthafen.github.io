@@ -1,0 +1,22 @@
+/* Patreon Page */
+/**{
+	box-sizing: border-box;
+}*/
+html, body{
+	background-color: #eaecef;
+	height: 100%;
+	margin: 0;
+}
+p{
+	color: red;
+}
+.footer{
+	height: 40px;
+	background-color: grey;
+	border-top-width: 3px;
+	border-color: white;
+}
+.everythingbutheaderandfooter{
+	min-height: 100%;
+	margin-bottom: -40px;
+}
