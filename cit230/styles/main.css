@@ -37,10 +37,3 @@ header img {
 footer {
     font-size: .5em;
 }
-.photo{
-	width: 300px;
-}
-.photo img{
-	max-height: 100%;
-	max-width: 100%;
-}
