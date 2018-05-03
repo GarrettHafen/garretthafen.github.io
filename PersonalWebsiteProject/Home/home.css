@@ -63,6 +63,7 @@ nav a:hover {
     float: right;
     padding-right: 5%;
     border: 5px solid black;
+    border-top: 0;
     padding-left: 5px;
     padding-top: 5px;
     height:74px;
@@ -184,16 +185,16 @@ a:visited {color:#255C99;}
 	list-style: none;
 }
 .orange{
-	background-color: black;
+	background-color: orange;
 }
 .yellow{
-	background-color: black;
+	background-color: yellow;
 }
 .pink{
-	background-color: black;
+	background-color: pink;
 }
 .green{
-	background-color: black;
+	background-color: green;
 }
 .active{ /*why is this needed. see jsfiddle its attaching to the big parent.*/
 	display:flex;
