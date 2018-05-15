@@ -7,21 +7,24 @@ body {
 
 h1, h2, h3 {
     color: #7c8855;
-    font-weigth:600;
+    font-weight:600;
 }
 
+/*
 h1 {
     font-size: 
 }
+property removed due to lack of direction. without being told what the h1 should be, we'll leave it as default*/
 
 header {
     background-color: #a3bb49; 
     padding: .5rem
 }
 
-main {
-	min-height: 5;
+/*main {
+	min-height: 5px;
 }
+again. how do we fix this without knowing what the client wants. removed until further direction is found*/
 
 main img {
     width: 128px;
@@ -35,10 +38,11 @@ footer {
 	background-color: #a3bb49;
 	color: #fff;
 	font-size: .8rem;
+}
 
 /* Class Selectors *******************/
 
 .profile {
     box-shadow: .25rem .25rem .25rem #ccaabb;
-    border: 1px solid #777;}
+    border: 1px solid #777;
 }
