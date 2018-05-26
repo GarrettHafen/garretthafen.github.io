@@ -4,6 +4,8 @@ and is geared toward the small/phone view */
 
 * { 
 	box-sizing: border-box;
+
+
 }  
 /* This wildcard applies to all elements ensuring a box layout model */
 
@@ -25,22 +27,46 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
+nav {
+
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+    height:40px;
+}
 nav button {}
 nav ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: lightblue;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  text-align: center;
+  padding: 0px 20px;
 }
 nav ul li {
-	display: inline;
-	padding: 75px;
-	padding-top: 15px;
+	padding: 10px .25em;
+  vertical-align: bottom;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0;
+  height: 40px;
+  display: inline-block;
+  white-space: nowrap;
 }
-nav ul li a {}
+nav ul li:first-child{
+  border-left: none;
+}
+nav ul li:last-child{
+  border-right: none;
+}
+nav ul li a {
+  vertical-align: bottom;
+}
 nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a:hover {
+  background-color: darkblue;
+}
 
 main {}
 main h2 {}
