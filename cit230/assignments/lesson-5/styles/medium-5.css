@@ -1,12 +1,51 @@
 @media only screen and (min-width: 37.5em) {
 
-    /* Only CSS write declarations that need to be changed. 
-    Do not duplicated declarations that are already established in the main.css */
-    nav ul li {
-    	padding: 10px 1em;
-    }
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
-    
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
+	header, nav, main, footer { 
+		max-width: 85%; 
+		margin: auto;
+	}
+    .hambuger, .menu-on, .menu-off, #toggle-menu,[type="checkbox"] { display:none; }
 
-  }
+    #firstimg{
+    	width: 50%;
+		clip: rect(0px,60px,200px,0px);
+    }
+	section.forecast{
+		display: block;
+	}
+	#sunnyicon{
+		max-width: 100px;
+	}
+	nav {
+	    font-weight: bold;
+	    margin-bottom: 10px;
+	    width: 100%;
+	    text-align: center;
+	    background-color: lightblue;
+	    height:40px;
+	    display: block;
+	}
+	nav ul {
+		position: fixed;
+		right: 0;
+		top:;
+		list-style: none;
+		display: table;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 0px 20px;
+		background: none;
+	}
+	nav ul li {
+		display: table-cell;
+		padding: 10px .25em;
+		vertical-align: bottom;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		text-align: center;
+		height: 40px;
+		display: inline-block;
+		white-space: nowrap;
+	}
+}
