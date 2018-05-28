@@ -6,9 +6,9 @@
 	}
     .hambuger, .menu-on, .menu-off, #toggle-menu,[type="checkbox"] { display:none; }
 
-    #firstimg{
+    .firstimg{
     	width: 50%;
-		clip: rect(0px,60px,200px,0px);
+		/*clip: rect(0px,60px,200px,0px);*/
     }
 	section.forecast{
 		display: block;

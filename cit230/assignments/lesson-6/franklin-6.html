@@ -35,8 +35,17 @@
   <main>
     <h2>Your Weather, Now!</h2>
     <figure>
-      <img id="firstimg" src="images/franklin-small.jpg" 
-            srcset="images/franklin-medium.jpg 600w, images/franklin-large.jpg 1024w">
+      <img class="firstimg" 
+          srcset="franklin-medium.jpg 600w,
+                   franklin-large.jpg  1024w"
+           sizes= "(max-width: 600px) 600px, 
+                   (max-width: 1024px) 1024px"
+           src="franklin-small.jpg" alt="variable picture" >
+<!--       <picture>
+        <source class="firstimg" srcset="franklin-large.jpg" media="min-width: 1024px"/>
+        <source class="firstimg" srcset="franklin-medium.jpg" media="min-width: 600px"/>
+        <img class="firstimg" srcset="images/franklin-small.jpg">
+      </picture> -->
     </figure>
     <section class="weather-summary">
       
