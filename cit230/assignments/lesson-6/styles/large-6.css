@@ -1,0 +1,22 @@
+@media only screen and (min-width: 64em ) { 
+
+	nav ul li {
+		padding: 10px 1.75em;
+	}
+	#firstimg{
+		width: 100%;
+	}
+	.forecast{
+		display: block;
+		clear: left;
+	}
+	#sunnyicon{
+		max-width: 100px;
+	}
+	.current{
+		float: left;
+	}
+	.highlow{
+		float:left;
+	}
+	
