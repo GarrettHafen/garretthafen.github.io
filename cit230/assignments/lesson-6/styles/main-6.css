@@ -27,13 +27,18 @@ header {}
 header h1 {}
 header img {}
 header .subheading {}
+.hamburger{
+  display: block;
+  position: absolute;
+  top: 2.0rem;
+  right:1.25rem;
+}
 
+}
 nav {
 
 }
 .menu-on{
-/*  background-color: #000;
-  color: #fff;*/
   position: fixed;
   right: 0;
   top: 0;
@@ -50,15 +55,15 @@ nav {
   bottom: 0;
   z-index: 1001;
   padding: 10px;
-
 }
-.hambuger{
+.hambuger1{
   height:50px;
   width: 50px;
   position: fixed;
   right: 0;
   top: 0
   z-index:1000;
+  display: none;
 }
 [type="checkbox"]{
   display: none;
@@ -73,10 +78,13 @@ nav {
 nav{
   display: none;
 }
+.responsive{
+  display:block;
+}
 nav ul{
   position: fixed;
-  right: 0;
-  top: 0;
+  right: 50px;
+  top: 40px;
   list-style: none;
   background-color: rgb(211,211,211, .85);
   padding-left: 05px;
@@ -85,6 +93,7 @@ nav ul{
 }
 nav ul li{
   text-align: left;
+  
 }
 nav ul li:first-child{
   border-left: none;

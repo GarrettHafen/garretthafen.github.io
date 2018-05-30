@@ -19,10 +19,11 @@
   </header>
 
     <input id="toggle-menu" type="checkbox"/>
-    <label for="toggle-menu" class="menu-on"><img class="hambuger" src="images/hambuger.jpg"> </label>
+    <label for="toggle-menu" class="menu-on"><img class="hambuger1" src="images/hambuger.jpg"> </label>
     <label for="toggle-menu" class="menu-off"></label>
+  <button class="hamburger" onclick="toggleHam()">&#9776;</button>
   <nav class="hidden-menu"> 
-    <ul>
+    <ul class="hamburgerNav">
     	<li><a href="../../index.html">Home</a></li>
     	<li><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -35,17 +36,8 @@
   <main>
     <h2>Your Weather, Now!</h2>
     <figure>
-      <img class="firstimg" 
-          srcset="franklin-medium.jpg 600w,
-                   franklin-large.jpg  1024w"
-           sizes= "(max-width: 600px) 600px, 
-                   (max-width: 1024px) 1024px"
-           src="franklin-small.jpg" alt="variable picture" >
-<!--       <picture>
-        <source class="firstimg" srcset="franklin-large.jpg" media="min-width: 1024px"/>
-        <source class="firstimg" srcset="franklin-medium.jpg" media="min-width: 600px"/>
-        <img class="firstimg" srcset="images/franklin-small.jpg">
-      </picture> -->
+      <img class="firstimg" src="images/franklin-small.jpg" alt="variable picture" 
+          srcset="images/franklin-medium.jpg 768w, images/franklin-large.jpg  1170w">
     </figure>
     <section class="weather-summary">
       
@@ -128,9 +120,9 @@
       123 Main St. Anytown, US 99999
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">PlaceHolder</span>
     </section>
   </footer>
-
+<script type="text/javascript" src="scripts/currentdate.js"></script>
 </body>
 </html>

@@ -39,7 +39,7 @@
 	}
 	nav ul li {
 		display: table-cell;
-		padding: 10px .25em;
+		padding: 10px .15em;
 		vertical-align: bottom;
 		border-right: 1px solid black;
 		border-left: 1px solid black;
@@ -47,5 +47,8 @@
 		height: 40px;
 		display: inline-block;
 		white-space: nowrap;
+	}
+	.hamburger{
+		display: none;
 	}
 }
