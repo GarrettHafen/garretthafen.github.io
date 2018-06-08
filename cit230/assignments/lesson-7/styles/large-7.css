@@ -1,0 +1,29 @@
+@media only screen and (min-width: 64em ) { 
+
+	/*nav ul li {
+		padding: 10px 1.75em;
+	}*/
+
+	.firstimg{
+		width: 100%;
+	}
+	.forecastTable{
+		display: flex;
+	}
+	#sunnyicon{
+		max-width: 100px;
+		margin-left: auto;
+	}
+	.current{
+		float: left;
+	}
+	.highlow{
+		float:left;
+	}
+	.container.weatherStuff{
+		flex-direction: row;
+		text-align: center;
+		justify-content: center;
+	}
+
+}

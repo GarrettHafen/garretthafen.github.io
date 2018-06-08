@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+ 	<title>Your Weather, Now!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=" this is for an assignment ">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/main-7.css">
+	<link rel="stylesheet" type="text/css" href="styles/medium-7.css">
+	<link rel="stylesheet" type="text/css" href="styles/large-7.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <header>
+  </header>
+
+    <input id="toggle-menu" type="checkbox"/>
+    <label for="toggle-menu" class="menu-on"><img class="hambuger1" src="images/hambuger.jpg"> </label>
+    <label for="toggle-menu" class="menu-off"></label>
+  <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav class="hidden-menu"> 
+    <ul class="hamburgerNav container">
+    	<li class="flexItem"><a href="../../index.html">Home</a></li>
+    	<li class="flexItem"><a href="#">Franklin</a></li>
+    	<li class="flexItem"><a href="#">Greenville</a></li>
+    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="#">Storm Center</a></li>
+    	<li class="flexItem"><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Your Weather, Now!</h2>
+    <figure>
+      <img class="firstimg" src="images/franklin-small.jpg" alt="variable picture" 
+          srcset="images/franklin-medium.jpg 768w, images/franklin-large.jpg  1170w">
+    </figure>
+    <section class="weather-summary">
+      
+      <h3 id="weatherSummaryH3">Weather Summary</h3>    
+      
+      <div class="current">
+        <picture>
+            <img id="sunnyicon" src="images/cartoon-sun-vector.jpg" alt="sunshine icon">
+        </picture>
+      </div> 
+      <div class="container weatherStuff">
+        <div class="highlow">
+          <p>High: 70</p>  
+          <p>Low: 47</p>  
+        </div>
+        <div class="conditions">
+          <p>Precipitation: 0.00%</p>  
+          <p>Wind Speed: 5 MPH</p>  
+        </div>
+      </div> 
+
+    </section>
+        
+    <section class="forecast">
+      <table class="forecastTabel">
+        <thead>
+          <tr>
+            <th>Ten Day Forecast</th>
+            </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		    </thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		    </tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <img id="recordBreak" src="images/recordBreak.jpg" alt="recordBreak Day">
+      <p class="town-article">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ex at massa suscipit condimentum. Vestibulum posuere ex nec sapien blandit, fermentum venenatis ex dignissim. Aliquam erat volutpat. Sed egestas sem nec leo efficitur vehicula eu at urna. Nam convallis tortor quis tempor ornare. Etiam quis libero diam. Suspendisse vel egestas leo. Aliquam elementum massa a nunc varius venenatis. Cras tincidunt egestas mattis. Quisque laoreet tortor quis libero imperdiet, sit amet pellentesque neque luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, lacus ut dignissim luctus, mauris nibh eleifend justo, sit amet gravida lectus ex in leo.
+
+          Maecenas vel diam tortor. Etiam sed augue non sapien viverra molestie sed nec risus. Nullam ac lectus quis leo vehicula fringilla condimentum vitae quam. Praesent vitae neque nec est ultricies maximus tempus vel odio. Suspendisse faucibus purus ac efficitur molestie. Integer eleifend velit sed aliquam bibendum. Phasellus sagittis et sem cursus tincidunt.
+
+          Suspendisse potenti. Donec fringilla enim a neque viverra suscipit. Nunc fringilla sodales urna eget tincidunt. Integer at turpis eros. Mauris blandit metus blandit lacus pharetra commodo. Vivamus convallis bibendum metus et varius. Sed sit amet lectus eget elit tincidunt ultricies pharetra in ligula. Quisque varius lorem non dui convallis luctus. Etiam a viverra enim. Pellentesque tristique, lorem et tempor ullamcorper, arcu justo hendrerit mi, non fermentum elit dui id ante. Sed finibus tortor vitae magna bibendum, eu convallis lectus lobortis.
+
+          Suspendisse et odio porta, mollis orci ac, sollicitudin velit. Suspendisse aliquet dignissim massa. Nunc facilisis aliquam odio in consectetur. Pellentesque ornare vulputate augue in auctor. Sed pharetra, ex convallis finibus aliquam, ante risus ultrices risus, ut ultrices arcu ipsum id ipsum. Cras sed justo nisi. Quisque vulputate dolor imperdiet leo condimentum ultrices.
+
+          Aliquam et turpis tellus. Fusce ac nulla porttitor, pretium diam eu, iaculis mi. Donec turpis velit, mattis quis dui non, feugiat ultricies neque. Nunc nec neque nec massa porta viverra. Maecenas at ante ac elit posuere feugiat. Donec eu convallis tortor. Nullam vitae lacinia massa, in tincidunt sem. Nam euismod, lacus sit amet efficitur viverra, felis arcu posuere lorem, ac blandit mi ante in lectus.
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">PlaceHolder</span>
+    </section>
+  </footer>
+<script type="text/javascript" src="scripts/currentdate.js"></script>
+</body>
+</html>
