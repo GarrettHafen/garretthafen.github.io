@@ -27,7 +27,6 @@ function getTime(){
 	var date = d.getDate();
 	var fullDate = weekday + ", " + date + " " + month + " " + year;
 	document.getElementById("currentdate").innerHTML = fullDate;
-	console.log(fullDate);
 }
 getTime();
 

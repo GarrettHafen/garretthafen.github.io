@@ -1,13 +1,3 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules 
-and is geared toward the small/phone view */
-
-* { 
-	box-sizing: border-box;
-
-
-}  
-/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
@@ -15,28 +5,14 @@ body {
 }
 
 header, nav, main, footer { 
-	/* the comma between the selectors means apply 
-	the following CSS declarations to all of the listed elements */
   max-width: 75%; 
-  /* Declare the maximum width and other main element 
-  rules to limit the stretch on larger/wider views */
   margin: auto;
 }
-
-header {}
-header h1 {}
-header img {}
-header .subheading {}
 .hamburger{
   display: block;
   position: absolute;
   top: 2.0rem;
   right:1.25rem;
-}
-
-}
-nav {
-
 }
 .menu-on{
   position: fixed;
@@ -49,10 +25,10 @@ nav {
   background-color: rgb(0,0,0,0.05);
   color: #fff;
   position: fixed;
-  right: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  right: 25px;
+  top: 34px;
+  /*left: 0;
+  bottom: 0;*/
   z-index: 1001;
   padding: 10px;
 }
@@ -81,11 +57,13 @@ nav{
 .responsive{
   display:block;
 }
+ul{
+  list-style: none;
+}
 nav ul{
   position: fixed;
   right: 50px;
   top: 40px;
-  list-style: none;
   background-color: rgb(211,211,211, .85);
   padding-left: 05px;
   padding-right: 5px;
@@ -127,11 +105,30 @@ table, th, td {
 }
 #sunnyicon{
     max-width: 100px;
-  }
-
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
-
-footer {}
+}
+h3#weatherSummaryH3.flexItem{
+  clear: both;
+}
+main figure { 
+  margin: 0 0 .2rem 2%; 
+  width:96%; 
+}
+section.container.contact{
+  flex-direction: column;
+  text-align: center;
+}
+.contactInfo{
+  margin: auto;
+}
+.contact{
+  padding-bottom: 10px;
+  background-color: lightblue;
+}
+.footer-bar{
+  background-color: #778899;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.footer-bar > .siteInfo {
+    margin-top: 0;
+}
