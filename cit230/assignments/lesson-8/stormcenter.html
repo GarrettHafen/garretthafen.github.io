@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Storm Center</title>
+	<link rel="stylesheet" type="text/css" href="styles/stormcenter.css">
+</head>
+<body>
+	<div class="test">
+		<div class="header">
+			<h1>Storm Center</h1>
+			<h4>Report a storm or weather phenomenom in your area</h3>
+		</div>
+		<div class="formStuff">
+			<form method="get" action="thanks.html" id="stormCenterForm">
+				<fieldset>
+					<legend>Weather Infomation</legend>
+					<legend>Personal Information</legend>
+						<label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z].{4,}" required="required"></label><br>
+						<label>Email <input type="email" name="email" placeholder="email@email.com"></label><br>
+						<label class="top">Phone Number* <input type="tel" name="phoneNumber" required="required"></ins></label><br>
+						<label class="top">Zip Code* <input type="number" name="zipCode" required="required"></label><br>
+						<label>Storm Date <input type="date" name="stormdate"></label><br>
+						<label>Storm Type <input list="storms" name="storms"> <datalist id="storms">
+							<option value="Flash Flood">
+							<option value="Hail">
+							<option value="Hurricane">
+							<option value="Thunderstorm">
+							<option value="Tornado">
+						</datalist></label><br>
+						<label>Storm Severity: <span id="severityValue">5</span> <input type="range" name="severity" min="1" max="10" value="5" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"></label><br>
+						<label>Storm Region <select name="region" form="stormCenterForm">
+							<option value="" disabled="disabled" selected="selected">Select Region</option>
+							<option value="Franklin">Franklin</option>
+							<option value="Greenville">Greenville</option>
+							<option value="Springfield">Springfield</option>
+						</select></label><br>
+						<label>In Danger? 
+							<label><input type="radio" name="danger" value="Yes">Yes</label>
+							<label><input type="radio" name="danger" value="No">No</label>
+							<label><input type="radio" name="danger" value="Maybe">Maybe</label>
+						</label><br>
+						<label>Additional Info: <input type="textarea" name="additionalinfo"></label>
+
+				</fieldset>
+				<input type="submit" name="submit" value="Report Weather!">
+			</form>
+		</div>
+		<a href="franklin-8.html">Home</a>
+	</div>
+	<script type="text/javascript" src="scripts/stormcenter.js"></script>
+</body>
+</html>
+
+<!-- to do
+regex for other required fields? (not required)
+thank you page
+css for form
+
+ -->
