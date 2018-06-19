@@ -1,0 +1,123 @@
+@media only screen and (min-width: 37.5em) {
+
+	header, nav, main, footer { 
+		max-width: 75%; 
+		margin: auto;
+	}
+    .hambuger, .menu-on, .menu-off, #toggle-menu,[type="checkbox"] { display:none; }
+
+    .firstimg{
+    	width: 50%;
+    	margin-top: 15px;
+    	margin-bottom: 15px;
+    }
+	.forecast{
+		display:flex;
+	}
+	.forecastTabel{
+		justify-content: space-around;
+	}
+	#sunnyicon{
+		max-width: 100px;
+		float: left;
+	}
+	nav {
+	    font-weight: bold;
+	    margin-bottom: 10px;
+	    margin-top: 20px;
+	    width: 100%;
+	    text-align: center;
+	    background-color: lightblue;
+	    height:50px;
+	    display: block;
+	}
+	nav ul {
+		position: relative;
+		right: 0;
+		top:0;
+		list-style: none;
+		display: table;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 0px 20px;
+		background: none;
+	}
+	nav ul li {
+		padding: 10px .15em;
+		padding-bottom: 0;
+		vertical-align: bottom;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		text-align: center;
+		height: 40px;
+		white-space: nowrap;
+	}
+	.hamburger{
+		display: none;
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+	.container.weatherStuff{
+		flex-direction: column;
+		text-align: center;
+	}
+	#weatherSummaryH3{
+		text-align: center;
+		clear: both;
+		margin-top: 0;
+	}
+	.container.forecast{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.foecastH3 p{
+		text-align: center;
+	}
+	div.flexItem.foecastH3{
+		margin-top: 15px;
+		background-color: grey;
+	}
+	.forecastDate{
+		background-color: lightgrey;
+	}
+	.forecastNumbers{
+		background-color: darkgrey;
+	}
+	.forecast li{
+		border: 1px solid black;
+	}
+	ul.container{
+		margin: 0;
+		padding: 0;
+	}
+	.forecast li{
+		padding: 15px 0;
+		text-align: center;
+		font-size: .75em;
+	}
+	li.flexItem{
+		flex: 1 1 0;
+	}
+	.container.weather-summary{
+		flex-direction: column;
+	}
+	div.container.logoTitleMotto{
+		justify-content: flex-start;
+	}
+	div.container.titleMotto{
+		flex-direction: column;
+		flex: 1 1 10px;
+	}
+	.motto{
+		margin-left: 50px;
+	}
+	h2.flexItem, h3.flexItem.motto{
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
