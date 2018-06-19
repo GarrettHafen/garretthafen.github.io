@@ -8,16 +8,12 @@
 	<div class="test">
 		<div class="header">
 			<h1>Storm Center</h1>
-			<h4>Report a storm or weather phenomenom in your area</h3>
+			<h4>Report a storm or weather phenomenom in your area</h4>
 		</div>
 		<div class="formStuff">
 			<form method="get" action="thanks.html" id="stormCenterForm">
 				<fieldset>
-					<legend>Weather Infomation</legend>
-					<legend>Personal Information</legend>
-						<label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z].{4,}" required="required"></label><br>
-						<label>Email <input type="email" name="email" placeholder="email@email.com"></label><br>
-						<label class="top">Phone Number* <input type="tel" name="phoneNumber" required="required"></ins></label><br>
+					<legend class="weatherInfo">Weather Infomation</legend>
 						<label class="top">Zip Code* <input type="number" name="zipCode" required="required"></label><br>
 						<label>Storm Date <input type="date" name="stormdate"></label><br>
 						<label>Storm Type <input list="storms" name="storms"> <datalist id="storms">
@@ -34,13 +30,19 @@
 							<option value="Greenville">Greenville</option>
 							<option value="Springfield">Springfield</option>
 						</select></label><br>
-						<label>In Danger? 
+						<label>In Danger? </label>
 							<label><input type="radio" name="danger" value="Yes">Yes</label>
 							<label><input type="radio" name="danger" value="No">No</label>
 							<label><input type="radio" name="danger" value="Maybe">Maybe</label>
-						</label><br>
-						<label>Additional Info: <input type="textarea" name="additionalinfo"></label>
-
+						<br>
+						<label class="last">Additional Info: </label>
+						<label><textarea  rows="1" cols="50"></textarea></label>
+				</fieldset>
+				<fieldset>
+					<legend class="personalInfo">Personal Information</legend>
+						<label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z].{4,}" required="required"></label><br>
+						<label>Email <input type="email" name="email" placeholder="email@email.com"></label><br>
+						<label class="top last">Phone Number* <input type="tel" name="phoneNumber" required="required"></label><br>
 				</fieldset>
 				<input type="submit" name="submit" value="Report Weather!">
 			</form>

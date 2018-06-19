@@ -30,11 +30,25 @@ html,body{
 	margin: auto;
 	text-align: center;
 }
+.personalInfo, .weatherInfo{
+	font-size: 1.75rem;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+form label, input{
+	margin: 5px;
+	display: inline-block;
+    text-align: right;
+}
+input + input {
+    float: right;
+}
+
+
 form label.top input:required {
 	border: red solid 2px;
 }
 form label.top input:required:valid{
 	border:none;
 	border-left: green solid 3px;
-
 }
