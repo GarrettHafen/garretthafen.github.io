@@ -120,4 +120,31 @@
 		margin-bottom: 0;
 		margin-top: 0;
 	}
+	.hideSmall, .weatherStory{
+		display: flex;
+	}
+	.weatherCities{
+	    align-items: center;
+	    border: none;
+	    width: 85%;
+	    flex-direction: column;
+	    margin: auto;
+	}	
+	.weatherStory, .franklin, .greenville, .springfield{
+		flex-direction: row !important;
+	}
+	.weatherCities div{
+		border:none;
+	}
+	.weatherCities p{
+		font-size: .65em;
+		margin: 5px 0;
+	}
+	.weatherCities img{
+		width: 50%;
+		margin: 0 15px;
+	}
+	.notPicture{
+		box-shadow: 5px 5px 10px lightgrey;
+	}
 }
