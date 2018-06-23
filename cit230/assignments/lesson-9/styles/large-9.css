@@ -40,10 +40,15 @@
 	#weatherSummaryH3{
 		margin-bottom: 0;
 	}
-	.largeCityScreen{
-		flex-direction: row;
-	}
-	.largeCityScreen .franklin, .largeCityScreen  .greenville, .largeCityScreen  .springfield {
+	.largeRow{
 		flex-direction: column;
+		width: 25%;
+		margin: 0;
+
+	}
+	div .largeCityScreen {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-content: center;
 	}
 }

@@ -132,11 +132,11 @@ section.container.contact{
 .footer-bar > .siteInfo {
     margin-top: 0;
 }
-.weatherCities div{
+.weatherCities{
   text-align: center;
   border: 1px solid black;
   padding-bottom: 5px;
-  width: 80%;
+  width: 93%;
   margin: auto;
 }
 .weatherCities img{
@@ -158,7 +158,4 @@ footer section{
 }
 .hideSmall {
     display: none;
-}
-.weatherCities div .notPicture{
-  border: none;
 }

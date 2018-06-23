@@ -131,7 +131,7 @@
 	    margin: auto;
 	}	
 	.weatherStory, .franklin, .greenville, .springfield{
-		flex-direction: row !important;
+		flex-direction: row;
 	}
 	.weatherCities div{
 		border:none;
@@ -140,14 +140,16 @@
 		font-size: .65em;
 		margin: 5px 0;
 	}
-	.weatherCities img{
-		width: 50%;
-		margin: 0 15px;
-	}
-	.franklin img{
-		object-fit: contain;
-	}
-	.notPicture{
+	div .notPicture{
 		box-shadow: 5px 5px 10px lightgrey;
+		width: 50%;
+		margin: 15px;
+	}
+	.picture{
+		width:50%;
+		margin: 0 25px;
+	}
+	.picture img{
+		width: 90%;
 	}
 }

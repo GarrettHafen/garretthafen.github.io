@@ -46,37 +46,45 @@
 	  			<h3>Weather Story</h3>
 	  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est dui. Cras felis est, tempor eget orci a, tempus egestas mi. Aenean in augue eget lacus faucibus ultricies at sollicitudin lacus. Curabitur dignissim, nisl nec congue luctus, turpis sapien pretium nibh, vitae sodales metus mauris ut sem. </p>
   			</div>
-	   		<img class="storyImage" src="images/weatherStory.jpg" alt="cityImage"> 			
+  			<div class="picture">
+	   			<img class="storyImage" src="images/weatherStory.jpg" alt="cityImage"> 	
+	   		</div>		
   		</div>
-  		<!-- <div class="largeCityScreen"> -->
-	  		<div class="franklin hideSmall">
-	  			<img class="franklinImage" src="images/franklinCity.jpg" alt="cityImage">
+  		<div class="largeCityScreen">
+	  		<div class="franklin hideSmall largeRow">
+	  			<div class="picture">
+	  				<img class="franklinImage" src="images/franklinCity.jpg" alt="cityImage">
+  				</div>
 	  			<div class="notPicture">
 		  			<h3>Franklin City</h3>
-					<p> Moto: <span class="moto">PlaceHolder</span></p>
-					<p> Year Founded: <span class="yearFounded">PlaceHolder</span></p>
-					<p> Population: <span class="population">PlaceHolder</span></p>
-					<p> Annual Rainfall: <span class="annualRainfall">PlaceHolder</span></p>
+					<p> Moto: <span id="fmoto">PlaceHolder</span></p>
+					<p> Year Founded: <span id="fyearFounded">PlaceHolder</span></p>
+					<p> Population: <span id="fpopulation">PlaceHolder</span></p>
+					<p> Annual Rainfall: <span id="fannualRainfall">PlaceHolder</span></p>
 				</div>		
 	  		</div>
-			<div class="greenville hideSmall">
+			<div class="greenville hideSmall largeRow">
 				<div class="notPicture">
 					<h3>Greenville City</h3>
-					<p> Moto: <span class="moto">PlaceHolder</span></p>
-					<p> Year Founded: <span class="yearFounded">PlaceHolder</span></p>
-					<p> Population: <span class="population">PlaceHolder</span></p>
-					<p> Annual Rainfall: <span class="annualRainfall">PlaceHolder</span></p>
+					<p> Moto: <span id="gmoto">PlaceHolder</span></p>
+					<p> Year Founded: <span id="gyearFounded">PlaceHolder</span></p>
+					<p> Population: <span id="gpopulation">PlaceHolder</span></p>
+					<p> Annual Rainfall: <span id="gannualRainfall">PlaceHolder</span></p>
 				</div>
-				<img class="greenvilleImage" src="images/greenvilleCity.jpg" alt="cityImage">
+				<div class="picture">
+					<img class="greenvilleImage" src="images/greenvilleCity.jpg" alt="cityImage">
+				</div>
 			</div>		
-			<div class="springfield hideSmall">
-				<img class="springfieldImage" src="images/springfieldCity.jpg" alt="cityImage">
+			<div class="springfield hideSmall largeRow">
+				<div class="picture">
+					<img class="springfieldImage" src="images/springfieldCity.jpg" alt="cityImage">
+				</div>
 				<div class="notPicture">
 					<h3>Springfield City</h3>
-					<p> Moto: <span class="moto">PlaceHolder</span></p>
-					<p> Year Founded: <span class="yearFounded">PlaceHolder</span></p>
-					<p> Population: <span class="population">PlaceHolder</span></p>
-					<p> Annual Rainfall: <span class="annualRainfall">PlaceHolder</span></p>
+					<p> Moto: <span id="smoto">PlaceHolder</span></p>
+					<p> Year Founded: <span id="syearFounded">PlaceHolder</span></p>
+					<p> Population: <span id="spopulation">PlaceHolder</span></p>
+					<p> Annual Rainfall: <span id="sannualRainfall">PlaceHolder</span></p>
 				</div>
 			</div>
   		</div>
@@ -97,5 +105,6 @@
     </section>
   </footer>
 <script type="text/javascript" src="scripts/currentdate.js"></script>
+<script src="scripts/weatherapi.js"></script>
 </body>
 </html>
