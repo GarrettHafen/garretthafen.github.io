@@ -137,7 +137,7 @@
 		border:none;
 	}
 	.weatherCities p{
-		font-size: .65em;
+		font-size: .75em;
 		margin: 5px 0;
 	}
 	div .notPicture{
@@ -147,7 +147,7 @@
 	}
 	.picture{
 		width:50%;
-		margin: 0 25px;
+		margin: 10px 25px;
 	}
 	.picture img{
 		width: 90%;
