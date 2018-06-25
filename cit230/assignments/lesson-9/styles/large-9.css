@@ -46,7 +46,8 @@
 		margin: 0;
 
 	}
-	div .largeCityScreen {
+	.largeCityScreen {
+		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-content: center;
