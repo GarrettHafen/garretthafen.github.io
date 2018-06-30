@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+ 	<title>Home: Your Weather, Now!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=" this is for an assignment ">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/main-10.css">
+	<link rel="stylesheet" type="text/css" href="styles/medium-10.css">
+	<link rel="stylesheet" type="text/css" href="styles/large-10.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <header>
+    <div class="container logoTitleMotto">
+      <img class="flexItem" src="images/logo.jpg" alt="logo">
+      <div class="container titleMotto">
+        <h2 class="flexItem">Your Weather, Now!</h2>
+        <h3 class="flexItem motto">Whenever You Need It, Thats When You'll Get It</h3>
+      </div>
+    </div>
+    <input id="toggle-menu" type="checkbox"/>
+    <label for="toggle-menu" class="menu-on"><img class="hambuger1" src="images/hambuger.jpg" alt="burgerIcon"> </label>
+    <label for="toggle-menu" class="menu-off"></label>
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  </header>
+
+    
+  <nav class="hidden-menu"> 
+    <ul class="hamburgerNav container">
+    	<li class="flexItem"><a href="../../index.html">Home</a></li>
+    	<li class="flexItem"><a href="franklin-10.html">Franklin</a></li>
+    	<li class="flexItem"><a href="#">Greenville</a></li>
+    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="flexItem"><a href="gallery-10.html">Gallery</a></li>
+    </ul>		
+  </nav>
+  	<div class="weatherCities">
+  		<div class="weatherStory">
+  			<div class="notPicture">
+	  			<h3>Weather Story</h3>
+	  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est dui. Cras felis est, tempor eget orci a, tempus egestas mi. Aenean in augue eget lacus faucibus ultricies at sollicitudin lacus. Curabitur dignissim, nisl nec congue luctus, turpis sapien pretium nibh, vitae sodales metus mauris ut sem. </p>
+  			</div>
+  			<div class="picture">
+	   			<img class="storyImage" src="images/weatherStory.jpg" alt="cityImage"> 	
+	   		</div>		
+  		</div>
+  		<div class="largeCityScreen">
+	  		<div class="franklin hideSmall largeRow">
+	  			<div class="picture">
+	  				<img class="franklinImage" src="images/franklinCity.jpg" alt="cityImage">
+  				</div>
+	  			<div class="notPicture">
+		  			<h3>Franklin City</h3>
+					<p> Moto: <span id="fmoto">PlaceHolder</span></p>
+					<p> Year Founded: <span id="fyearFounded">PlaceHolder</span></p>
+					<p> Population: <span id="fpopulation">PlaceHolder</span></p>
+					<p> Annual Rainfall: <span id="fannualRainfall">PlaceHolder</span></p>
+				</div>		
+	  		</div>
+			<div class="greenville hideSmall largeRow">
+				<div class="notPicture">
+					<h3>Greenville City</h3>
+					<p> Moto: <span id="gmoto">PlaceHolder</span></p>
+					<p> Year Founded: <span id="gyearFounded">PlaceHolder</span></p>
+					<p> Population: <span id="gpopulation">PlaceHolder</span></p>
+					<p> Annual Rainfall: <span id="gannualRainfall">PlaceHolder</span></p>
+				</div>
+				<div class="picture">
+					<img class="greenvilleImage" src="images/greenvilleCity.jpg" alt="cityImage">
+				</div>
+			</div>		
+			<div class="springfield hideSmall largeRow">
+				<div class="picture">
+					<img class="springfieldImage" src="images/springfieldCity.jpg" alt="cityImage">
+				</div>
+				<div class="notPicture">
+					<h3>Springfield City</h3>
+					<p> Moto: <span id="smoto">PlaceHolder</span></p>
+					<p> Year Founded: <span id="syearFounded">PlaceHolder</span></p>
+					<p> Population: <span id="spopulation">PlaceHolder</span></p>
+					<p> Annual Rainfall: <span id="sannualRainfall">PlaceHolder</span></p>
+				</div>
+			</div>
+  		</div>
+	</div>
+  <footer>
+    <section class="container contact">
+      <p class="flexItem contactInfo">Your Weather, Now!</p>
+      <p class="flexItem contactInfo">123 Main St.</p>
+      <p class="flexItem contactInfo">Anytown, US 99999</p>
+      <p class="flexItem contactInfo">999.999.9999</p>
+      <p class="flexItem contactInfo">email@emaildomain.fake</p>
+    </section>
+    <section class="footer-bar container">
+      <p class="flexItem siteInfo">&copy;2018</p>
+      <p class="flexItem siteInfo">All Rights Reserved</p>
+      <p class="flexItem siteInfo">Your Weather, Now!</p>
+      <p class="flexItem siteInfo"><span id="currentdate">PlaceHolder</span></p>
+    </section>
+  </footer>
+<script type="text/javascript" src="scripts/currentdate.js"></script>
+<script src="scripts/weatherapi.js"></script>
+</body>
+</html>
