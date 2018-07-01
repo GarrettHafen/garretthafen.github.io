@@ -48,20 +48,20 @@
           sizes="100vm">
     </figure>
     <section class="container weather-summary">     
-      <h3 class="flexItem" id="weatherSummaryH3">Weather Summary</h3>
+      <h3 class="flexItem" id="weatherSummaryH3">Franklin Weather Summary</h3>
         <div class="container weather-summary-nonHeader">
           <div class="container sunnyStatus">  
             <picture class="flexItem sunnyicon">
                 <img id="sunnyicon" src="images/cartoon-sun-vector.jpg" alt="sunshine icon">
             </picture>   
             <div class="flexItem statusSunny">
-              <p class="test"><b>Sunny</b></p>
+              <p class="test"><b><span id="weatherStatus">    </span></b></p>
             </div>
           </div>
           <div class="container statusNumbers">
             <div class="highlow flexItem">
-              <p>High: <b><span id="high">70</span>&deg;</b></p>  
-              <p>Low: <b><span id="low">47</span>&deg;</b></p>  
+              <p>High: <b><span id="high"></span>&deg;</b></p>  
+              <p>Low: <b><span id="low"></span>&deg;</b></p>  
             </div>
             <div class="conditions flexItem">
               <p>Precipitation: <b>0.00%</b></p>  
@@ -92,16 +92,16 @@
         </div>
         <div class="flexItem forecastNumbers">
           <ul class="container">
-            <li class="flexItem">89&deg;F</li>
-            <li class="flexItem">87&deg;F</li>
-            <li class="flexItem">78&deg;F</li>
-            <li class="flexItem">75&deg;F</li>
-            <li class="flexItem">72&deg;F</li>
-            <li class="flexItem">72&deg;F</li>
-            <li class="flexItem">79&deg;F</li>
-            <li class="flexItem">83&deg;F</li>
-            <li class="flexItem">85&deg;F</li>
-            <li class="flexItem">89&deg;F</li>
+            <li class="flexItem" id="forecast0">&deg;F</li>
+            <li class="flexItem" id="forecast1">&deg;F</li>
+            <li class="flexItem" id="forecast2">&deg;F</li>
+            <li class="flexItem" id="forecast3">&deg;F</li>
+            <li class="flexItem" id="forecast4">&deg;F</li>
+            <li class="flexItem" id="forecast5">&deg;F</li>
+            <li class="flexItem" id="forecast6">&deg;F</li>
+            <li class="flexItem" id="forecast7">&deg;F</li>
+            <li class="flexItem" id="forecast8">&deg;F</li>
+            <li class="flexItem" id="forecast9">&deg;F</li>
           </ul> 
         </div>
     </section>
@@ -139,6 +139,7 @@
       <p class="flexItem siteInfo"><span id="currentdate">PlaceHolder</span></p>
     </section>
   </footer>
+<script type="text/javascript" src="scripts/franklin.js"></script>
 <script type="text/javascript" src="scripts/currentdate.js"></script>
 <script type="text/javascript" src="scripts/windchill.js"></script>
 </body>

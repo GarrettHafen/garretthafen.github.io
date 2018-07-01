@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Storm Center</title>
+ 	<title>Your Weather, Now!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=" this is for an assignment ">
+  	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/main-10.css">
+	<link rel="stylesheet" type="text/css" href="styles/medium-10.css">
+	<link rel="stylesheet" type="text/css" href="styles/large-10.css">
+  	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/stormcenter.css">
 </head>
 <body>
+  	<header>
+	    <div class="container logoTitleMotto">
+	      <img class="flexItem" src="images/logo.jpg" alt="logo">
+	      <div class="container titleMotto">
+	        <h2 class="flexItem">Your Weather, Now!</h2>
+	        <h3 class="flexItem motto">Whenever You Need It, Thats When You'll Get It</h3>
+	      </div>
+	    </div>
+	    <input id="toggle-menu" type="checkbox"/>
+	    <label for="toggle-menu" class="menu-on"><img class="hambuger1" src="images/hambuger.jpg" alt="burgerIcon"> </label>
+	    <label for="toggle-menu" class="menu-off"></label>
+	    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  	</header>
+	<nav class="hidden-menu"> 
+	    <ul class="hamburgerNav container">
+	    	<li class="flexItem"><a href="index.html">Home</a></li>
+	    	<li class="flexItem"><a href="franklin-10.html">Franklin</a></li>
+	    	<li class="flexItem"><a href="greenville.html">Greenville</a></li>
+	    	<li class="flexItem"><a href="springfield.html">Springfield</a></li>
+	    	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
+	    	<li class="flexItem"><a href="gallery-10.html">Gallery</a></li>
+	    </ul>		
+  	</nav>
+
+	<main>
 	<div class="test">
 		<div class="header">
 			<h1>Storm Center</h1>
@@ -47,6 +80,7 @@
 		</div>
 		<a href="index.html">Home</a>
 	</div>
+	</main>
 	<script type="text/javascript" src="scripts/stormcenter.js"></script>
 </body>
 </html>

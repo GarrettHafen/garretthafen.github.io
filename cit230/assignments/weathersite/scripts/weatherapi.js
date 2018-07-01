@@ -11,7 +11,7 @@
 // }
 
 
-//assignment 9
+//assignment 9 home page
 let detailsRequest = new XMLHttpRequest();
 let detailsAPI = "https://byui-cit230.github.io/weather/data/towndata.json";
 
@@ -19,19 +19,20 @@ detailsRequest.open('GET', detailsAPI, true);
 detailsRequest.send();
 detailsRequest.onload = function(){
 	let detailsData = JSON.parse(detailsRequest.responseText);
-	//franklin
+	//franklinHome
 	document.getElementById("fmoto").innerHTML = detailsData['towns'][0].motto;
 	document.getElementById("fyearFounded").innerHTML = detailsData['towns'][0].yearFounded;
 	document.getElementById("fpopulation").innerHTML = detailsData['towns'][0].currentPopulation;
 	document.getElementById("fannualRainfall").innerHTML = detailsData['towns'][0].averageRainfall;
-	//greenville
+	//greenvilleHome
 	document.getElementById("gmoto").innerHTML = detailsData['towns'][1].motto;
 	document.getElementById("gyearFounded").innerHTML = detailsData['towns'][1].yearFounded;
 	document.getElementById("gpopulation").innerHTML = detailsData['towns'][1].currentPopulation;
 	document.getElementById("gannualRainfall").innerHTML = detailsData['towns'][1].averageRainfall;
-	//springfield
+	//springfieldHome
 	document.getElementById("smoto").innerHTML = detailsData['towns'][2].motto;
 	document.getElementById("syearFounded").innerHTML = detailsData['towns'][2].yearFounded;
 	document.getElementById("spopulation").innerHTML = detailsData['towns'][2].currentPopulation;
 	document.getElementById("sannualRainfall").innerHTML = detailsData['towns'][2].averageRainfall;
 }
+
