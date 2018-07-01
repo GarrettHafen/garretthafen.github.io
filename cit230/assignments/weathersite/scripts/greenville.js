@@ -30,7 +30,7 @@
 	forecastRequest.send();
 	forecastRequest.onload = function(){
 		let forecastData = JSON.parse(forecastRequest.responseText);
-		for (var i = 0; i <= 10; i++) {
+		for (var i = 0; i < 10; i++) {
 			document.getElementById("forecast" +[i]).innerHTML = forecastData["list"][i].main.temp + "&deg;";
 		}
 	}
