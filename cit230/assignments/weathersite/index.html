@@ -23,15 +23,12 @@
         <h3 class="flexItem motto">Whenever You Need It, Thats When You'll Get It</h3>
       </div>
     </div>
-    <input id="toggle-menu" type="checkbox"/>
-    <label for="toggle-menu" class="menu-on"><img class="hambuger1" src="images/hambuger.jpg" alt="burgerIcon"> </label>
-    <label for="toggle-menu" class="menu-off"></label>
-    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
   </header>
 
     
-  <nav class="hidden-menu"> 
-    <ul class="hamburgerNav container">
+  <nav class=""> 
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="container hide">
     	<li class="flexItem"><a class="active" href="../../index.html">Class Home</a></li>
     	<li class="flexItem"><a href="franklin-10.html">Franklin</a></li>
     	<li class="flexItem"><a href="greenville.html">Greenville</a></li>
@@ -106,5 +103,6 @@
   </footer>
 <script type="text/javascript" src="scripts/currentdate.js"></script>
 <script src="scripts/weatherapi.js"></script>
+<script src="scripts/toggle.js"></script>
 </body>
 </html>

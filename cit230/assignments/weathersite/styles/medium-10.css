@@ -53,8 +53,15 @@
 		height: 40px;
 		white-space: nowrap;
 	}
-	.hamburger{
+	nav ul li a{
+		border-top: none;
+		padding: 0;
+	}
+	nav button{
 		display: none;
+	}
+	nav ul.hide{
+		display: flex;
 	}
 	.container{
 		display: flex;
