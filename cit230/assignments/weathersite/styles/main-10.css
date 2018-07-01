@@ -10,7 +10,7 @@ header, nav, main, footer {
 }
 nav button{
   margin: .2rem 2%;
-  background-color transparent;
+  background-color: transparent;
   border: none;
   font-size: 1.6rem;
   color: #555;
