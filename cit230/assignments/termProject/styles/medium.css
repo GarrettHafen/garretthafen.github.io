@@ -1,0 +1,9 @@
+@media only screen and (min-width: 37.5em) { /*600px wide*/
+	nav{
+		display: block;
+		font-size: 1.25em;
+	}
+	.topNav .navBackground {
+		height: 400px;
+	}
+}
