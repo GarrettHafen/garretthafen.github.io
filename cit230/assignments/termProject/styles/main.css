@@ -62,7 +62,7 @@ nav ul li a:hover, .footerDetails p a:hover {
   text-shadow: 1px 1px black;
 }
 .content{
-	height: 2000px;
+	height: 1000px;
 }
 .footer {
 	width: 100%;
@@ -75,7 +75,7 @@ nav ul li a:hover, .footerDetails p a:hover {
 }
 .footerImg img{
 	display: flex;
-	max-height: 187px;
+	max-height: 90%;
 	position: relative;
 	top: 14px;
 }

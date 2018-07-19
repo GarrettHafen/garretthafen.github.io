@@ -7,31 +7,13 @@
 		height: 400px;
 	}
 	.footer {
-	width: 100%;
-	height: 300px;
-	background-color: #6B1327;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+		height: 220px;
 	}
 	.footerImg img{
-		display: flex;
-		max-height: 187px;
-		position: relative;
-		top: 14px;
+		max-width: 100%;
 	}
 	.footerDetails{
-		display: flex;
-		flex-direction: column;
-		padding-left: 50px;
-		padding-top: 25px;
-		font-size: .85em;
+		font-size: .95em;
 	}
-	.footerDetails p{
-		margin-top: 0;
-	}
-	.footerDetails p a{
-		color: inherit;
-		text-decoration: none;
-	}
+
 }
