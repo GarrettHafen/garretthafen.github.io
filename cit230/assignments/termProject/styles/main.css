@@ -57,6 +57,10 @@ nav ul li a:hover, .footerDetails p a:hover {
 .logo{
 	display: none;
 }
+.active{
+  color:#FF6F00 !important;
+  text-shadow: 1px 1px black;
+}
 .content{
 	height: 2000px;
 }
