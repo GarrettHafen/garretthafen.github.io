@@ -25,3 +25,7 @@ function addActiveClass() {
 	}
 }
 addActiveClass();
+
+function toggleMenu(){
+	console.log("test");
+}

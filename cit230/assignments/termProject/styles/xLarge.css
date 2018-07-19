@@ -1,0 +1,27 @@
+@media only screen and (min-width: 87.5em ) { /*1400 px wide*/
+	nav{
+		font-size: 1.5em;
+	}
+	.topNav .navBackground {
+		height: 700px;
+	}
+	.logo {
+		max-width: 600px;
+		max-height: 600px;
+		position: relative;
+		top: -630px;
+		left: 56%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo img{
+		max-width: 550px;
+		max-height: 550px;
+	}
+	.logo p {
+		font-size: 3.5em;
+		margin-top: -10px;
+		text-shadow: 4px 2px 2px rgba(107, 19, 39, 1);
+	}
+}
