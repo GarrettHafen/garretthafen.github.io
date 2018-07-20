@@ -36,4 +36,21 @@
 	.footerDetails{
 		font-size: 1.25em;
 	}
+	.cTwo {
+		display: flex;
+		height: 300px;
+		width: 50%;
+		background-color: #F7F7E4;
+	}
+	.cTwo p{
+		font-size: 1.25em;
+		text-align: center;
+		margin: auto;
+		line-height: 1.5;
+	}
+	.salesCarousels{
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0;
+	}
 }

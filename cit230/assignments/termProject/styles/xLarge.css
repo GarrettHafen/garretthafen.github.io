@@ -33,4 +33,20 @@
 	.footerDetails{
 		font-size: 1.5em;
 	}
+	.cTwo {
+		width: 40%;
+	}
+	.cThree{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.cThree .info{
+		flex-direction: column;
+	}
+	.cThree img{
+		height: 200px;
+		width: 232px;
+		padding-left: 5px;
+	}
 }
