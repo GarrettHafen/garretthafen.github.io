@@ -3,6 +3,9 @@
 		display: block;
 		font-size: 1.25em;
 	}
+	.topNav{
+		height: 400px;
+	}
 	.topNav .navBackground {
 		height: 400px;
 	}

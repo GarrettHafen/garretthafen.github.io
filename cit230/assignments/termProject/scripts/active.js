@@ -1,3 +1,4 @@
+// display which tab is active
 function addActiveClass() {
 	var index 			= document.getElementById("index");
 	var sales 			= document.getElementById("sales");
@@ -24,8 +25,28 @@ function addActiveClass() {
 		}
 	}
 }
-addActiveClass();
 
-function toggleMenu(){
-	console.log("test");
+// set carousel behavior
+var i = 0;
+var images=[];
+
+images[0] = 'assets/bikePart1.jpeg';
+images[1] = 'assets/bikePart2.jpeg';
+images[2] = 'assets/bikePart3.jpeg'
+
+
+function changeImgUp(){
+	i++;
+	if(i > images.length - 1){
+		i = 0;
+	}
+	document.slide.src = images[i];
 }
+function changeImgDown(){
+	i--;
+	if(i < 0){
+		i = images.length - 1;
+	}
+	document.slide.src = images[i];
+}
+window.onload = images[i];
