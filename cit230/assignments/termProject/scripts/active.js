@@ -1,4 +1,4 @@
-// display which tab is active
+/*-----------------------display active tab-----------------------*/
 function addActiveClass() {
 	var index 			= document.getElementById("index");
 	var sales 			= document.getElementById("sales");
@@ -26,7 +26,7 @@ function addActiveClass() {
 	}
 }
 
-// set carousel behavior
+/*-----------------------carousel behavior-----------------------*/
 var i = 0;
 var images=[];
 var partNames=[];
@@ -39,15 +39,24 @@ var partPrice2 = document.getElementById("price2");
 images[0] = 'assets/bikePart1.jpeg';
 images[1] = 'assets/bikePart2.jpeg';
 images[2] = 'assets/bikePart3.jpeg';
+images[3] = 'assets/bikePart4.jpeg';
+images[4] = 'assets/bikePart5.jpeg';
+images[5] = 'assets/bikePart6.jpeg';
 
 partNames[0] = 'Dohicky';
 partNames[1] = 'Thingamabob';
-partNames[2] = 'theHeckIsThis?';
+partNames[2] = 'TheHeckIsThis?';
+partNames[3] = 'ThatOneThing';
+partNames[4] = 'Click Clack';
+partNames[5] = 'Twisty Bit';
 
 partPrices[0] = '$12.99';
 partPrices[1] = '$22.33';
 partPrices[2] = '$0.55';
-/*carousel one or left on xlarge pages*/
+partPrices[3] = '$10.55';
+partPrices[4] = '$330.55';
+partPrices[5] = '$20.55';
+/*-----------------------carousel left/only-----------------------*/
 function changeImgUp(){
 	i++;
 	if(i > images.length - 1){
@@ -86,3 +95,31 @@ function changeImgDown2(){
 	partPrice2.innerHTML = partPrices[i];
 }
 window.onload = images[i];
+
+/*-----------------------generate shop page content-----------------------*/
+
+var salesSpots = [1,2,3,4,5,6];
+var innerDiv = "";
+
+for(let i = 0; i < salesSpots.length; i++){
+	innerDiv += 
+	`
+		<div class="salesSpot">
+			<div class="salesSpotImg">
+				<img src="${images[i]}">
+			</div>
+			<div class="info">
+				<div class="salesInfoSales">
+					<h3>${partNames[i]} : ${partPrices[i]}</h3>
+				</div>
+				<div class="learnMoreSales">
+					<h3>Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tincidunt mauris, sed aliquam nibh ornare non. Maecenas quis lorem consequat, eleifend ligula et, vulputate nulla.</p>
+				</div>
+			</div>
+		</div>
+
+	`
+}
+var salesContainer = document.getElementById("salesContent");
+salesContainer.innerHTML = innerDiv;
