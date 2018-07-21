@@ -72,12 +72,12 @@ nav ul li a:hover, .footerDetails p a:hover {
 
 
 /*-----------------------main page content-----------------------*/
-
-
 .content1, .content2, .content3{
+	margin-bottom: 50px;
+}
+
+.content1, .content3{
 	height: 400px;
-	background-color: rgba(67,124,144,.25);
-	border-bottom: solid 2px black;
 }
 .content1{
 	display:flex;
@@ -198,6 +198,65 @@ a:hover .left:after, a:hover .right:after {
 }
 
 
+/*-----------------------middle content home page-----------------------*/
+.content2{
+	display: flex;
+	background: url("../assets/bikingEvents.jpg");
+	background-size: cover;
+	justify-content: flex-end;
+	align-items: center;
+	overflow: hidden;
+	height: 338px;
+	z-index: 1000;
+	opacity: .75;
+}
+.c2Info{
+	top:-334px;
+	left:21%;
+	text-align: center;
+	z-index: 1001;
+	background-color: rgba(247,247,227,.33);
+	height: 100%;
+	width: 50%;
+	justify-content:center;
+	display: flex;
+	flex-direction: column;
+}
+.eventButton{
+	border: 1px solid black;
+	border-radius: 33px;
+	margin:0 auto;
+	padding: 0 10px;
+}
+.eventButton a{
+	text-decoration: none;
+	color: inherit;
+}
+.eventButton:hover{
+	color: white;
+	background-color: #6B1327;
+}
+.c2Info2{
+	display: none;
+}
+
+/*-----------------------content 3 home page-----------------------*/
+.content3{
+	display: flex;
+	flex-direction: row-reverse;
+	background: url("../assets/adventureToursHome.jpg");
+	background-size: cover;
+	overflow: hidden;
+}
+.c3TourImg{
+	width:50%;
+}
+.c3Details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 25%;
+}
 
 /*-----------------------footer stuff-----------------------*/
 

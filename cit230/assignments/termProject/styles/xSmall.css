@@ -6,5 +6,25 @@
 	.footerImg img{
 		display: none;
 	}	
+	.cButtons{
+		display: none;
+	}
+	.c2Info{
+		height: 100%;
+		width:100%;
+		background-color: rgba(247,247,227,.8);
+	}
+	.content2{
+		opacity: .9;
+	}
+	.c3Details{
+		height: 100%;
+		width:100%;
+		background-color: rgba(247,247,227,.8);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 0;
+	}
 
 }

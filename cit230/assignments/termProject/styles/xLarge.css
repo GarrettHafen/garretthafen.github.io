@@ -49,4 +49,18 @@
 		width: 232px;
 		padding-left: 5px;
 	}
+	.cOne,.cThree{
+		padding-top: 15px;
+	}
+	.content1{
+		margin-top: 200px;
+		height:450px;
+	}
+	.content2{
+		height:650px;
+		font-size: 1.75em;
+	}
+	.c3Details{
+		font-size: 1.75em;
+	}
 }

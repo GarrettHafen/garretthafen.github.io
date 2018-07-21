@@ -52,5 +52,15 @@
 		flex-direction: row;
 		justify-content: space-around;
 		margin: 0;
+		align-items: center;
+	}
+	.content2{
+		height:500px;
+	}
+	.content3{
+		height:500px;
+	}
+	.c3Details{
+		font-size: 1.25em;
 	}
 }
