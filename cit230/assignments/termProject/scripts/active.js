@@ -25,6 +25,7 @@ function addActiveClass() {
 		}
 	}
 }
+addActiveClass();
 
 /*-----------------------carousel behavior-----------------------*/
 var i = 0;
