@@ -320,6 +320,82 @@ tbody tr:first-child, tbody tr:last-child{
 .contactUsService h3:nth-child(2){
 	width: 100px;
 }
+
+/*-----------------------tours page-----------------------*/
+
+/*-----------------------contact page-----------------------*/
+
+.contentContact{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #437C90;
+}
+.contactDetails{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+.contactDetails h1, .contactDetails h2{
+	margin-bottom: 0;
+	font-size: 1em;
+}
+.contactForm form fieldset{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+	margin-bottom:50px;
+	width: 89%;
+}
+.contactForm label{
+	display: inline-block;
+	width: 100px;
+}
+.contactForm label{
+	margin: 10px;
+}
+.contactForm input, textarea{
+	border-radius: 33px;
+}
+
+.skillLevel{
+	display: block;
+}
+.skillLevel label{
+	width:70px;
+}
+.contactNote{
+	font-size: .75em;
+}
+
+input[type=submit]{
+	margin-bottom: 50px;
+	margin-left: 5px;
+	padding: 10px 20px 11px !important;
+	font-size: 21px !important;
+	background-color: #6B1327;
+	font-weight: bold;
+	text-shadow: 1px 1px #6B1327;
+	color: #ffffff;
+	border-radius: 33px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border: 1px solid #6B1327;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+
+/*-----------------------events page-----------------------*/
+
 /*-----------------------footer stuff-----------------------*/
 
 

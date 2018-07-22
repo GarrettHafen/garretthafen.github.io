@@ -65,4 +65,22 @@
 	.c3Details{
 		font-size: 1.25em;
 	}
+	.contactForm form fieldset{
+		width: 91%;
+	}
+	.contactDetails{
+		font-size: 1.5em;
+	}
+	.contactForm {
+		font-size: 1em;
+	}
+	.contactForm label{
+		width: 75px;
+	}
+	.skillLevel label {
+		width: 75px;
+	}
+	.skillLevel input{
+		margin: 3px;
+	}
 }

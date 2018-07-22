@@ -64,6 +64,21 @@
 		font-size: 1.75em;
 	}
 	.topNav .salesPage p {
-	font-size: 2.5em;
-}
+		font-size: 2.5em;
+	}
+	.contactDetails{
+		font-size: 2em;
+	}
+	.contactForm {
+		font-size: 1.5em;
+	}
+	.contactForm label{
+		width:120px;
+	}
+	.skillLevel label {
+		width: 110px;
+	}
+	.skillLevel input{
+		margin: 3px;
+	}
 }

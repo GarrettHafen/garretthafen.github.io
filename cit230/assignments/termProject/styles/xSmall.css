@@ -26,5 +26,9 @@
 		justify-content: center;
 		margin-right: 0;
 	}
+	.skillLevel{
+		display: flex;
+		flex-direction: column;
+	}
 
 }

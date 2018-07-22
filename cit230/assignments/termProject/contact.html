@@ -35,8 +35,32 @@
 			<p>Make your voice heard</p>
 		</div>
 	</div>	
-	<div class="content">
-		
+	<div class="contentContact">
+		<div class="contactDetails">
+			<h1>Contact Us</h1>
+			<h2>Want to reach out to our team, got a suggestion or a complaint?</h2>
+			<h2>Complete the form below to make your voice heard!</h2>
+		</div>
+		<div class="contactForm">
+			<form method="get"action="thankYou.html" id="contactForm">
+				<fieldset>
+					<legend>Make your voice heard!</legend>
+						<label>First Name <input type="text" name="firstName" required="required"></label>
+						<label>Last Name <input type="text" name="lastName" required="required"></label>
+						<div class="skillLevel">
+							<label>Skill Level</label>
+							<label><input type="radio" name="skillLevel" value="Noob">Noob</label>
+							<label><input type="radio" name="skillLevel" value="Medium">Medium</label>
+							<label><input type="radio" name="skillLevel" value="Master">Master</label>
+						</div>
+						<label>Email <input type="email" name="email" placeholder="email@email.com" required="required"></label>
+						<label>Comments</label>
+						<label><textarea rows="1" cols="25" required="required"></textarea></label>
+						<p class="contactNote"><strong>Note:</strong> if you are contacting us about an order, please include your order number.</p>
+				</fieldset>
+				<input type="submit" name="submit" value="Be Heard!">
+			</form>
+		</div>	
 	</div>
 	<div class="footer">
 		<div class="footerDetails">
