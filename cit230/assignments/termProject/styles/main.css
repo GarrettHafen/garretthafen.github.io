@@ -288,6 +288,28 @@ a:hover .left:after, a:hover .right:after {
 	padding: 12px;
 }
 
+/*-----------------------service page-----------------------*/
+
+.serviceTable table{
+	display: table;
+	border-collapse: collapse;
+	box-shadow: 3px 3px 13px 0px #6B1327;
+	background-color: #5F822E;
+	margin: 50px;
+} 
+table, th, tr, td{
+	border: 1px solid #F7F7E3;
+	text-align: center;
+	padding: 5px;
+}
+thead{
+	font-size: 1.25em;
+	background-color: #5B4A34;
+}
+tbody tr:first-child, tbody tr:last-child{
+	background-color: #437C90;
+}
+
 /*-----------------------footer stuff-----------------------*/
 
 
