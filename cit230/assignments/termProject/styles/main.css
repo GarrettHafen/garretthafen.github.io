@@ -309,7 +309,17 @@ thead{
 tbody tr:first-child, tbody tr:last-child{
 	background-color: #437C90;
 }
-
+.contactUsService{
+	text-align: center;
+	margin: 0 auto 50px auto;
+	width: 30%;
+	background-color: #F7F7E3;
+	padding: 25px;
+	border-radius: 33px; 
+}
+.contactUsService h3:nth-child(2){
+	width: 100px;
+}
 /*-----------------------footer stuff-----------------------*/
 
 
