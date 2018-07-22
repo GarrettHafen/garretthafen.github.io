@@ -392,7 +392,12 @@ input[type=submit]{
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
-
+.visitMap{
+	margin: 50px;
+}
+.visitDetails{
+	font-size: 1.2em;
+}
 
 /*-----------------------events page-----------------------*/
 

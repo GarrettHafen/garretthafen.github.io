@@ -124,3 +124,5 @@ for(let i = 0; i < salesSpots.length; i++){
 }
 var salesContainer = document.getElementById("salesContent");
 salesContainer.innerHTML = innerDiv;
+
+/*-----------------------contact page content map-----------------------*/

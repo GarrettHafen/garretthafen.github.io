@@ -83,4 +83,14 @@
 	.skillLevel input{
 		margin: 3px;
 	}
+	.visitMap{
+		margin: 50px;
+	}
+	.visitMap iframe{
+		width: 1000px;
+	}
+	.visitDetails h3{
+		font-size: 1.75em;
+		margin: 0;
+	}
 }
