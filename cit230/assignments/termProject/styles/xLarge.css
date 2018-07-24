@@ -80,4 +80,7 @@
 	.skillLevel input{
 		margin: 3px;
 	}
+	.bigGrid{
+		max-width: 60%;
+	}
 }
