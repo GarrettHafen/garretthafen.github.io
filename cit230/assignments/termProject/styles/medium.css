@@ -32,4 +32,8 @@
 		width: 85%;
 		padding-left: 30px;
 	}
+	.eventWrapper{
+		grid-template-rows: .15fr 5fr 1fr;
+	}
+
 }

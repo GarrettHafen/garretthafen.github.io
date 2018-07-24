@@ -502,12 +502,11 @@ input[type=submit]{
 /*-----------------------events page-----------------------*/
 
 .eventWrapper {
-  height: 100vh;
   display: grid;
   align-content: center;
   justify-content: center;
   grid-template-columns: 2fr 1fr 3fr 1fr 3fr 1fr 2fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: .12fr 5fr 1fr;
   grid-template-areas: "header header header header header header header"
                        "main main main main main main main"
                        "footer footer footer footer footer footer footer"
@@ -516,9 +515,9 @@ input[type=submit]{
 .eventMain {
   grid-area: main;
   display: grid;
-  grid-template-columns: 60px 7fr 1fr;
+  grid-template-columns: 60px 7fr 60px;
   grid-template-rows: 1fr;
-  grid-template-areas: "sidebar box-content box-content";
+  grid-template-areas: "sidebar box-content";
 }
 
 .eventBoxContent {
@@ -529,7 +528,6 @@ input[type=submit]{
   grid-gap: 10px;
   padding: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  height: 150px;
 }
 
 .eventHeader  { 
@@ -542,20 +540,23 @@ input[type=submit]{
 .eventFooter { grid-area: footer; }
 
 .eventsPage {
-  background-color: #f1c40f;
+  background-color: #437C90;
   border: 1px solid white;
 }
 .card{
-	place-self: center stretch;
+	border: 1px solid #6B1327;
+	padding:5px;
+	height: 525px;
 }
 .cardImg img{
-	width:100px;
+	width:100%;
 }
 .cardDetails{
 	position: relative;
+	text-align: center;
 }
 .cardFooter{
-
+	text-align: center;
 }
 .card:before, .card:after{
 	content:"";
@@ -563,6 +564,22 @@ input[type=submit]{
 }
 .card:after{
 	clear:both;
+}
+.registerButton{
+	padding: 10px 20px 11px !important;
+	font-size: 21px !important;
+	background-color: #6B1327;
+	font-weight: bold;
+	text-shadow: 1px 1px #6B1327;
+	color: #ffffff;
+	border-radius: 33px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border: 1px solid #6B1327;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 

@@ -83,4 +83,11 @@
 	.bigGrid{
 		max-width: 90%;
 	}
+	.eventBoxCotent{
+		grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+	}
+	.eventWrapper{
+		grid-template-rows: .3fr 5fr 1fr;
+	}
+
 }

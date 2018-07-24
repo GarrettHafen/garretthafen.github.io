@@ -98,4 +98,11 @@
 		width: 40%;
 		padding-left: 80px;
 	}
+	.eventBoxCotent{
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	}
+	.eventWrapper{
+		grid-template-rows: .25fr 5fr 1fr;
+	}
+
 }
