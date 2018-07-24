@@ -94,6 +94,7 @@
 		margin: 0;
 	}
 	.gridItem{
-		width: 46%;
+		width: 40%;
+		padding-left: 80px;
 	}
 }

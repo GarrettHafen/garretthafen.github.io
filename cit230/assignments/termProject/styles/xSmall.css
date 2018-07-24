@@ -44,3 +44,9 @@
 		width: 250px;
 	}
 }
+
+@media only screen and (max-width: 30.25em) { /*500px wide*/
+	.gridItem{
+		padding: 75px;
+	}
+}
