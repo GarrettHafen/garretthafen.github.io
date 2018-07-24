@@ -323,6 +323,47 @@ tbody tr:first-child, tbody tr:last-child{
 
 /*-----------------------tours page-----------------------*/
 
+.gridItemImg img{
+	width: 100%;
+}
+.bigGrid{
+	max-width: 100%;
+	margin: 50px auto;
+}
+.gridItem{
+	float:left;
+	padding-left: 30px;
+	width: 400px;
+}
+.ATbutton{
+	width: 64px;
+	height: 15px;
+	margin-bottom: 50px;
+	margin-left: 5px;
+	margin-top: 15px;
+	padding: 10px 20px 11px !important;
+	font-size: 21px !important;
+	background-color: #5F822E;
+	font-weight: lighter;
+	text-shadow: 1px 1px #6B1327;
+	color: #ffffff;
+	border-radius: 33px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border: 1px solid #6B1327;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+.ATbutton h3{
+	font-size: .9em;
+	margin: -4px 0;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+
 /*-----------------------contact page-----------------------*/
 
 .contentContact{

@@ -25,5 +25,8 @@
 	.c2Info2{
 		display: block;
 	}
-
+	.bigGrid{
+		max-width: 85%;
+		margin: 50px auto;
+	}
 }
