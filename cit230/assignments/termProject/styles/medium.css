@@ -28,4 +28,7 @@
 	.bigGrid{
 		max-width: 85%;
 	}
+	.gridItem{
+		width: 75%;
+	}
 }

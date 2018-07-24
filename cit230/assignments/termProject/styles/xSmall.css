@@ -40,4 +40,7 @@
 	.visitDetails{
 		font-size: 1em;
 	}
+	.gridItem {
+		width: 250px;
+	}
 }
