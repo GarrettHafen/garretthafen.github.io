@@ -43,7 +43,7 @@ nav ul li{
 nav ul li a {
   vertical-align: bottom;
   display: block;
-  padding: .8rem 2%;
+  padding: .8rem 10px;
   text-decoration: none;
   color: #6B1327;
 }

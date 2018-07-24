@@ -8,16 +8,19 @@ function addActiveClass() {
 	var events 			= document.getElementById("events");
 
 	var links = [
-		index,
 		contact,
 		adventureTours,
 		events,
 		sales,
-		service
+		service,
+		index
 	];
 
 	for(var i = 0; i < links.length; i++){
-		if (links[i].getAttribute("href")==="#"){
+		if(links[i] === index){
+			break;
+		}
+		else if (links[i].getAttribute("href")==="#"){
 			links[i].classList.add("active");
 		}
 		else{
@@ -95,10 +98,11 @@ function changeImgDown2(){
 	partName2.innerHTML = partNames[i];
 	partPrice2.innerHTML = partPrices[i];
 }
-window.onload = images[i];
+if(window){
+	window.onload = images[i];
+}
 
 /*-----------------------generate shop page content-----------------------*/
-
 var salesSpots = [1,2,3,4,5,6];
 var innerDiv = "";
 
@@ -152,6 +156,7 @@ if(closeButton){
 if(window){
 	window.addEventListener("click", windowOnClick);
 }
+
 
 
 
