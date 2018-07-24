@@ -504,8 +504,8 @@ input[type=submit]{
 .eventWrapper {
   height: 100vh;
   display: grid;
-  align-content: stretch;
-  justify-content: stretch;
+  align-content: center;
+  justify-content: center;
   grid-template-columns: 2fr 1fr 3fr 1fr 3fr 1fr 2fr;
   grid-template-rows: 1fr 5fr 1fr;
   grid-template-areas: "header header header header header header header"
@@ -528,16 +528,41 @@ input[type=submit]{
   display: grid;
   grid-gap: 10px;
   padding: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 150px;
 }
 
-.eventHeader  { grid-area: header; }
+.eventHeader  { 
+	grid-area: header; 
+	place-self: center stretch;
+	margin: auto;
+	font-size: 2.5rem;
+}
 .eventSidebar { grid-area: sidebar; }
 .eventFooter { grid-area: footer; }
 
 .eventsPage {
   background-color: #f1c40f;
   border: 1px solid white;
+}
+.card{
+	place-self: center stretch;
+}
+.cardImg img{
+	width:100px;
+}
+.cardDetails{
+	position: relative;
+}
+.cardFooter{
+
+}
+.card:before, .card:after{
+	content:"";
+	display: table;
+}
+.card:after{
+	clear:both;
 }
 
 
