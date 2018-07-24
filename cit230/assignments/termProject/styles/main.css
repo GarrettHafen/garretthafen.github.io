@@ -334,13 +334,12 @@ tbody tr:first-child, tbody tr:last-child{
 	float:left;
 	padding-left: 30px;
 	width: 400px;
+	margin-bottom: 50px;
 }
 .ATbutton{
-	width: 64px;
-	height: 15px;
-	margin-bottom: 50px;
-	margin-left: 5px;
-	margin-top: 15px;
+	width: 105px;
+	height: 51px;
+	margin: 50px auto;
 	padding: 10px 20px 11px !important;
 	font-size: 21px !important;
 	background-color: #5F822E;
@@ -357,8 +356,8 @@ tbody tr:first-child, tbody tr:last-child{
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 .ATbutton h3{
-	font-size: .9em;
-	margin: -4px 0;
+	font-size: 1.25em;
+	margin: 12px 7px;
 	font-weight: lighter;
 	font-style: italic;
 }
@@ -438,6 +437,49 @@ input[type=submit]{
 }
 .visitDetails{
 	font-size: 1.2em;
+}
+
+/*-----------------------modal styling-----------------------*/
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
 /*-----------------------events page-----------------------*/

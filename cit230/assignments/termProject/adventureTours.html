@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
 <body>
-<div id="page">
+<div id="page ">
 	<div class="topNav">
 		<section class="navBackground">
 			<div class="navTable">
@@ -35,8 +35,11 @@
 			<p>Come Join the Fun</p>
 		</div>
 	</div>	
-	<div class="content">
+	<div class="adventureTourPage">
 		<div class="bigGrid">
+			<div class="ATbutton trigger">
+				<h3>Sign Up</h3>
+			</div>
 			<div class="gridItem">
 				<div class="gridItemImg">
 					<img src="assets/adventureTour1.png" alt="this is an image">
@@ -55,8 +58,16 @@
 						</span>
 					</div>
 				</div>
-				<div class="ATbutton">
-					<h3>Sign Up</h3>
+			</div>
+			<div class="gridItem tall">
+				<div class="gridItemImg">
+					<img class="" src="assets/adventureTour6.png" alt="this is an image">
+				</div>
+				<div class="gridItemDetails">
+					<h2>This is a title</h2>
+					<div class="gridItemDetailsParagraph">
+						<span>This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc. </span>
+					</div>
 				</div>
 			</div>
 			<div class="gridItem">
@@ -70,23 +81,6 @@
 						This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc.This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc.This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc. </span>
 					</div>
 				</div>
-				<div class="ATbutton">
-					<h3>Sign Up</h3>
-				</div>
-			</div>
-			<div class="gridItem tall">
-				<div class="gridItemImg">
-					<img class="" src="assets/adventureTour6.png" alt="this is an image">
-				</div>
-				<div class="gridItemDetails">
-					<h2>This is a title</h2>
-					<div class="gridItemDetailsParagraph">
-						<span>This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc. </span>
-					</div>
-				</div>
-				<div class="ATbutton">
-					<h3>Sign Up</h3>
-				</div>
 			</div>
 			<div class="gridItem">
 				<div class="gridItemImg">
@@ -97,9 +91,6 @@
 					<div class="gridItemDetailsParagraph">
 						<span>This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc. </span>
 					</div>
-				</div>
-				<div class="ATbutton">
-					<h3>Sign Up</h3>
 				</div>
 			</div>
 			<div class="gridItem">
@@ -112,10 +103,40 @@
 						<span>This is a description and will contain information that surrounds the individual tours, maybe containing a list of descriptions like difficulty, time required, special equipment etc. </span>
 					</div>
 				</div>
-				<div class="ATbutton">
-					<h3>Sign Up</h3>
-				</div>
 			</div>
+			<div class="modal">
+			<div class="modal-content">
+	            <span class="close-button">&times;</span>
+	            <h1>Registration</h1>
+	            <div class="registrationForm contactForm">
+						<form method="get"action="thankYou.html" id="adventureTourForm">
+							<fieldset>
+								<legend><span id="adventureTour">Make your voice heard!</span></legend>
+									<label>First Name <input type="text" name="firstName" required="required"></label>
+									<label>Last Name <input type="text" name="lastName" required="required"></label>
+									<div class="skillLevel">
+										<label>Skill Level</label>
+										<label><input type="radio" name="skillLevel" value="Noob">Noob</label>
+										<label><input type="radio" name="skillLevel" value="Medium">Medium</label>
+										<label><input type="radio" name="skillLevel" value="Master">Master</label>
+									</div>
+									<label>Email <input type="email" name="email" placeholder="email@email.com" required="required"></label>
+									<label>Adventure Tour <select name="tour" form="adventureTourForm">
+										<option value="" disabled="disabled" selected="selected">Select A Tour</option>
+										<option value="Thigh Burner">Thigh Burner</option>
+										<option value="Noobie Patrol">Noobie Patrol</option>
+										<option value="Day Tripper">Day Tripper</option>
+										<option value="Weekender">Weekender</option>
+										<option value="Tour De Montana">Tour De Montana</option>
+									</select></label>
+									<label>Comments</label>
+									<label><textarea rows="1" cols="25" required="required"></textarea></label>
+							</fieldset>
+							<input type="submit" name="submit" value="Register">
+						</form>
+					</div>
+				</div>
+	        </div>
 		</div>
 	</div>
 	<div class="footer">
@@ -133,5 +154,6 @@
 </div>	
 <script src="scripts/index.js"></script>
 <script src="scripts/active.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
