@@ -76,6 +76,13 @@ nav ul li a:hover, .footerDetails p a:hover {
 }
 
 
+/*-----------------------hamburger-----------------------*/
+
+.hamburger{
+	position: relative;
+	background-color: #6B1327 !important;
+}
+
 /*-----------------------main page content-----------------------*/
 
 .content1, .content2, .content3{
