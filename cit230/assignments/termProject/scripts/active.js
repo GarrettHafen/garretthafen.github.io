@@ -4,13 +4,26 @@
 	var actualNav = document.getElementById("nav");
 // Look for .hamburger
 	var hamburger = document.querySelector(".hamburger");
+		// close modal on window click
+	var	miniMenu = document.querySelector(".is-active")	
+	
 // On click
-	hamburger.addEventListener("click", function() {
+	function toggleHamburger() {
 		// Toggle class "is-active"
 		hamburger.classList.toggle("is-active");
 		//toggle class "miniMenu"
 		actualNav.classList.toggle("miniMenu");
-});
+	};
+	function windowHamburgerOnClick(event) {
+	    if (event.target === actualNav) {
+			toggleHamburger();
+        
+	    }
+	}
+	if(window){
+		window.addEventListener("click", windowHamburgerOnClick);
+	}
+
 
 /*-----------------------display active tab-----------------------*/
 function addActiveClass() {
