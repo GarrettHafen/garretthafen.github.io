@@ -75,12 +75,27 @@ nav ul li a:hover, .footerDetails p a:hover {
 	z-index: 1001;
 }
 
-
 /*-----------------------hamburger-----------------------*/
 
 .hamburger{
-	position: relative;
 	background-color: #6B1327 !important;
+	position:fixed;
+	z-index: 10000;
+}
+.miniMenu {
+	display:flex;
+	height: 300px;
+	justify-content: center;
+}
+.miniMenu ul{
+	display: flex;
+	flex-direction: column;
+}
+.miniMenu ul li{
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /*-----------------------main page content-----------------------*/
