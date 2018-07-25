@@ -47,4 +47,9 @@
 	.eventBoxContent{
 	    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
+	.modal-content{
+	    width: 15rem;
+	    overflow: scroll;
+	    height: 80%;
+	}
 }

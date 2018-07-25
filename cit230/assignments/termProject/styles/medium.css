@@ -35,5 +35,8 @@
 	.eventWrapper{
 		grid-template-rows: .15fr 5fr 1fr;
 	}
+	.modal-content{
+		width: 31rem;
+	}
 
 }

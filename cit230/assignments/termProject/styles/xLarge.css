@@ -69,13 +69,13 @@
 		font-size: 2em;
 	}
 	.contactForm {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.contactForm label{
 		width:120px;
 	}
 	.skillLevel label {
-		width: 110px;
+		width: 75px;
 	}
 	.skillLevel input{
 		margin: 3px;

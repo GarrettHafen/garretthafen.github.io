@@ -380,7 +380,7 @@ tbody tr:first-child, tbody tr:last-child{
 
 /*-----------------------modal styling-----------------------*/
 
-.modal {
+.modal, .eventModal {
     position: fixed;
     left: 0;
     top: 0;
@@ -399,11 +399,11 @@ tbody tr:first-child, tbody tr:last-child{
     transform: translate(-50%, -50%);
     background-color: #F7F7E3;
     padding: 1rem 1.5rem;
-    width: 24rem;
+    width: 23rem;
     border-radius: 0.5rem;
     color: #437C90;
 }
-.close-button {
+.close-button, .closeEventButton {
     float: right;
     width: 1.5rem;
     line-height: 1.5rem;
@@ -420,6 +420,7 @@ tbody tr:first-child, tbody tr:last-child{
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1003;
 }
 
 /*-----------------------contact page-----------------------*/

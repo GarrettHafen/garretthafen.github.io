@@ -134,7 +134,6 @@ if(salesContainer){
 
 /*-----------------------adventure tour modal-----------------------*/
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
 var closeButton = document.querySelector(".close-button");
 
 
@@ -147,9 +146,7 @@ function windowOnClick(event) {
         toggleModal();
     }
 }
-if(trigger){
-	trigger.addEventListener("click", toggleModal);
-}
+
 if(closeButton){
 	closeButton.addEventListener("click", toggleModal);
 }
@@ -157,6 +154,22 @@ if(window){
 	window.addEventListener("click", windowOnClick);
 }
 
+/*-----------------------events modal-----------------------*/
 
+var eventModal = document.querySelector(".eventModal");
+var closeEventButton = document.querySelector(".closeEventButton");
 
-
+function toggleEventModal(){
+	eventModal.classList.toggle("show-modal");
+}
+function windowEventOnClick(event) {
+    if (event.target === eventModal) {
+        toggleEventModal();
+    }
+}
+if(closeEventButton){
+	closeEventButton.addEventListener("click", toggleEventModal);
+}
+if(window){
+	window.addEventListener("click", windowEventOnClick);
+}

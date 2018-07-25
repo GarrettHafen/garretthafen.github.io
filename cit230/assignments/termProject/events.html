@@ -56,7 +56,7 @@
 								</ul>
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton"> Register</p>
+								<p class="registerButton" onclick="toggleEventModal()"> Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -74,7 +74,7 @@
 								</ul>
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -93,7 +93,7 @@
 
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -112,7 +112,7 @@
 
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -131,7 +131,7 @@
 
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -150,7 +150,7 @@
 
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -169,7 +169,7 @@
 
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -188,7 +188,7 @@
 
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -206,7 +206,7 @@
 								</ul>
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 						<div class="card">
@@ -224,13 +224,41 @@
 								</ul>
 							</div>
 							<div class="cardFooter">
-								<p class="registerButton">Register</p>
+								<p class="registerButton" onclick="toggleEventModal()">Register</p>
 							</div>
 						</div>
 					</div>
 				</div>	
 			<div class="eventFooter"></div>
 		</div>
+		<div class="eventModal">
+			<div class="modal-content">
+	            <span class="closeEventButton">&times;</span>
+	            <h1>Registration</h1>
+	            <div class="registrationForm contactForm">
+						<form method="get"action="thankYou.html" id="adventureTourForm">
+							<fieldset>
+								<legend><span id="adventureTour">Make your voice heard!</span></legend>
+									<label>First Name <input type="text" name="firstName" required="required"></label>
+									<label>Last Name <input type="text" name="lastName" required="required"></label>
+									<div class="skillLevel">
+										<label>Skill Level</label>
+										<label><input type="radio" name="skillLevel" value="Noob">Noob</label>
+										<label><input type="radio" name="skillLevel" value="Medium">Medium</label>
+										<label><input type="radio" name="skillLevel" value="Master">Master</label>
+									</div>
+									<label>Email <input type="email" name="email" placeholder="email@email.com" required="required"></label>
+									<label>Phone Number <input type="tel" name="phoneNumber"></label>
+									<label>Birthday <input type="date" name="birthday"></label>
+									<label>State or Country <input type="text" name="state"></label>
+									<label>Comments/Special Accommodations</label>
+									<label><textarea rows="1" cols="25" required="required"></textarea></label>
+							</fieldset>
+							<input type="submit" name="submit" value="Register">
+						</form>
+					</div>
+				</div>
+	        </div>
 	</div>
 	<div class="footer">
 		<div class="footerDetails">
