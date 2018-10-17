@@ -1,0 +1,33 @@
+.example{
+	margin:50px;
+}
+#popUp{
+	height: 250px;
+	width: 250px;
+	background-color: teal;
+	display:block;
+	margin-top:15px;
+}
+.scale{
+	transform: scale(.5, .5);
+}
+.rotate{
+	transform: rotate(25deg);
+}
+.skew{
+	transform: skewX(25deg);
+}
+
+.example2{
+	margin:50px;
+}
+#popUp2{
+	height: 250px;
+	width: 250px;
+	background-color: red;
+	display:block;
+	margin-top:15px;
+}
+.test{
+	transform: skewX(55deg) scale(.5, .5) rotate(45deg);
+}
