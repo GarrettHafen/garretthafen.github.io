@@ -1,0 +1,245 @@
+body{
+	background-color: grey;
+	font-family: 'Mali', cursive;
+	margin-left: 25px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.welcome, .animationExplanation{
+	text-shadow: .5px .5px 3px rgba(120, 124, 130, .5);
+    background-color: rgba(61, 72, 89, .75);
+    padding: 15px 30px;
+    max-width: 350px; 
+    margin-bottom: 50px; 
+}
+.welcome p{
+	font-size: 1.4em;
+	color: white;
+}
+.sideNote{
+	font-size: .8em;
+}
+
+.animationExplanation{
+	font-size: 1.1em;
+	color: white;
+}
+.circle {
+	height: 40px;
+	width: 40px;
+	border: 1px solid black;
+	border-radius: 50px;
+	background-color: green;
+	position: absolute;
+	top:100%;
+	left:49%;
+	margin-left:-20px;
+}
+.circleAnimation{
+	animation: move-in-steps 10s 1;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes move-in-steps {
+	3% {
+		transform:translateY(-256px);
+		margin-left:-20px;
+		width: 40px;
+	}
+	5% {
+		transform:translateY(-216px);
+		margin-left:-20px;
+		width: 40px;
+	}
+	7%{
+		transform:translateY(-246px);
+		margin-left:-20px;
+		width: 40px;
+	}
+	8%{
+		transform:translateY(-226px);
+		margin-left:-20px;
+		width: 40px;
+	}
+	9%{
+		transform:translateY(-236px);
+		margin-left:-20px;
+		width: 40px;
+	}
+	10%{
+		transform:translateY(-236px);
+		margin-left:-150px;
+		width: 300px;
+	}
+	20%{
+		transform:translateY(-236px);
+		margin-left:-150px;
+		width: 300px;
+	}
+	25% {	
+		transform:translateY(-236px);
+		margin-left:-150px;
+		width: 300px;	
+	}
+	35%{
+		transform:translateY(-236px);
+		margin-left:-150px;
+		width: 300px;
+	}
+	40% {		
+		transform:translateY(-236px);
+		margin-left:-150px;
+		width: 300px;
+	}
+	50%{		
+		transform:translateY(-236px);
+		margin-left:-150px;
+		width: 300px;
+	}
+	55%{		
+		transform:translateY(-236px);
+		margin-left:-75px;
+		width: 150px;
+	}
+	65%{		
+		transform:translateY(-764px) scale(1,1);
+		margin-left:-75px;
+		width: 150px;
+	}
+	70%{		
+		transform:translateY(-864px) scale(2,2);
+		margin-left:-75px;
+		width: 150px;
+	}
+	75% {
+		transform:translateY(-1028px) scale(2,2);
+		margin-left:-75px;
+		width: 150px;		
+	}
+	85% {
+		transform:translateY(-1028px) scale(1,1);
+		margin-left:-75px;
+		width: 150px;	
+		background-color: green;
+	}
+	90%{
+		transform:translate(960px, -1028px) skewX(35deg);
+		margin-left:-75px;
+		width: 150px;
+		background-color: #c00c0c;		
+	}
+	93% {
+		transform:translate(960px, -1028px) skewX(35deg);
+		margin-left:-75px;
+		width: 150px;
+		background-color: #c00c0c;		
+	}
+	100% {
+		transform:translate(840px, -1028px)skewX(0deg);	
+		margin-left:-75px;
+		width: 150px;
+		background-color: #c00c0c;	
+
+	}
+}
+
+.circle2{
+	height: 40px;
+	width: 150px;
+	border: 1px solid black;
+	border-radius: 50px;
+	top: 100%;
+	left: 100%;
+	background-color: #c00c0c;
+	position: absolute;
+}
+.hidden{
+	display:none;
+}
+.circleAnimation2{
+	animation: move-in-steps2 10s 1;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes move-in-steps2 {
+	0% {
+		transform:translateY(-1028px);
+	}
+	90%{
+		left:100%;
+		transform:translateY(-1028px);
+	}
+	96.5%{
+		left:100%;
+		transform:translateY(-1028px);
+	}
+	100%{
+		left:97.5%;
+		transform:translateY(-1028px);
+	}
+}
+
+.circle p {
+	animation: fadeIn 1.4s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+@keyframes fadeIn {
+	0% 		{opacity:0;}
+	90% 	{opacity:0;}
+	100% 	{opacity:1;}
+}
+.circle2 p {
+	animation: fadeIn2 1.4s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	margin: auto;	color: white;
+}
+@keyframes fadeIn2 {
+	0% 		{opacity:0;}
+	90% 	{opacity:0;}
+	100% 	{opacity:1;}
+}
+.hiddenText {
+	animation: fadeOut 5.25s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+	0% 		{opacity:1;}
+	90% 	{opacity:1;}
+	100% 	{opacity:0;}
+}
+
+.text{
+	padding-top: 10px;
+	animation: centerText 5.25s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+@keyframes centerText{
+	0%{padding-left:0;}
+	90%{padding-left:0;}
+	100%{padding-left:250px;}
+}
+.small{
+	padding-left: 14px;
+	text-align: left;
+}

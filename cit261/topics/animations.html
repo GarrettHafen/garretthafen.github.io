@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>CSS Animations</title>
+	<title>Professors Code Review | Garrett Hafen | BYU-Idaho</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content=" this is for an assignment ">
-	<link rel="stylesheet" type="text/css" href="../styles/animations.css">
+	<link rel="stylesheet" type="text/css" href="styles/codeReview.css">
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
 </head>
 <body>
+	<div class="welcome">
+		<h1>Welcome Bro. James</h1>
+		<p>Below you'd find an assortment of buttons that trigger an assortment of functions to display the various code topics. <span class="sideNote">*Note* some of these functions are designed specifically for a 1920x1080 window.</span></p>
+	</div>
 
+	<div class="animationsDisplay">
+		<button onclick="kickOffAnimation();setTimeout(removeHiddenText,5300);" id="animationDisplay" title="This requires a 1920x1080 screen size to work properly.">Animations*</button>
+		<button onclick="reset();" id="reset">Reset</button>
+	
+		<p class="animationExplanation">
+			With this animation, you can find transforms, transitions, of course, animations, ajax, and access to an API and some DOM manipulation. Its far from done, and eventually I want to incorporate Local Storage. This is actually what I want to do as a business, creating overlays for Twitch streamers incorporates almost of the code topics we're learning about this semester. 
+		</p>
 
+		<div class="circle hidden" id="circle">
+			<p class="text"><span id="testRecentFollower">JaggerNaught</span><span class="hiddenText" id="hiddenText"> Is a New Follower!!</span></p>
+		</div>
+		<div class="circle2 hidden" id="circle2">
+			<p class="text small">Yay</p>
+		</div>
 
-<script type="text/javascript" src="animations.js"></script>
+	</div>
+
+<script type="text/javascript" src="scripts/codeReview.js"></script>
 </body>
 </html>
