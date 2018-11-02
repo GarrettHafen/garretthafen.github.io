@@ -36,7 +36,7 @@ body{
 	margin-left:-20px;
 }
 .circleAnimation{
-	animation: move-in-steps 10s 1;
+	animation: move-in-steps 8s 1;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	-webkit-animation-fill-mode: forwards;
@@ -160,7 +160,7 @@ body{
 	display:none;
 }
 .circleAnimation2{
-	animation: move-in-steps2 10s 1;
+	animation: move-in-steps2 8s 1;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	-webkit-animation-fill-mode: forwards;
@@ -186,7 +186,7 @@ body{
 }
 
 .circle p {
-	animation: fadeIn 1.4s;
+	animation: fadeIn 1s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	-webkit-animation-fill-mode: forwards;
@@ -201,7 +201,7 @@ body{
 	100% 	{opacity:1;}
 }
 .circle2 p {
-	animation: fadeIn2 1.4s;
+	animation: fadeIn2 1s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	-webkit-animation-fill-mode: forwards;
@@ -214,7 +214,7 @@ body{
 	100% 	{opacity:1;}
 }
 .hiddenText {
-	animation: fadeOut 5.25s;
+	animation: fadeOut 4s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	-webkit-animation-fill-mode: forwards;
@@ -228,7 +228,7 @@ body{
 
 .text{
 	padding-top: 10px;
-	animation: centerText 5.25s;
+	animation: centerText 1s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	-webkit-animation-fill-mode: forwards;
