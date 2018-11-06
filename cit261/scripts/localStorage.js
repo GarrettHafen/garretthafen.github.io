@@ -29,6 +29,7 @@ window.onload = function checkStorage(){
 		//filled
 		welcome.classList.toggle("hidden");
 		displayUserName.innerHTML = storedUserName;
+		addLogoutButton();
 	} else{
 	loginForm.classList.toggle("hidden");
 	}
@@ -71,6 +72,7 @@ function addLogoutButton(){ //change to hamburger (maybe leave hamburger?)
 	listFollowers.innerHTML = "Display list of Followers";
 	listFollowers.setAttribute("onClick", "listOfFollowers()");
 	hamburger.appendChild(listFollowers);
+
 }
 
 //hide logout button at login screen
@@ -152,10 +154,11 @@ function displayTwitcherStatus(){
 //display all followers
 function listOfFollowers(){
 	var followerList = document.createElement("UL");
-	var individualFollower;
-		for(i=0; i<mostRecentFollowers.length; i++){
+	var individualFollower =[];
+	var storedListFollowers = JSON.parse(localStorage.getItem("RecentFollowers"));
+		for(i=0; i<storedListFollowers.length; i++){
 			individualFollower = document.createElement("LI");
-			individualFollower.innerHTML = mostRecentFollowers[i];
+			individualFollower.innerHTML = storedListFollowers[i];
 			followerList.appendChild(individualFollower);
 		} 
 	welcome.appendChild(followerList);
