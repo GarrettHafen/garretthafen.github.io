@@ -1,6 +1,6 @@
 /*get twitch data*/
 //get twitch recent followers
-/*var getJSONUser = function(url, callback) {
+var getJSONUser = function(url, callback) {
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", url, true);
 	xhr.onload = function() {
@@ -25,7 +25,7 @@ getJSONUser(url_channels, function(response) {
 		followerName = response.data[0].display_name;
 		document.getElementById('testRecentFollower').innerHTML = followerName;
 	});
-});*/
+});
 
 /*twitch animation*/
 var circle = document.getElementById('circle');
