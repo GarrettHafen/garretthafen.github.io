@@ -137,14 +137,14 @@ function insertVideo(){
 
 //array of sounds
 var sounds = [
-	"images/sounds/PacmanDies.mp3",
-	"images/sounds/PacmanEatingCherry.mp3",
-	"images/sounds/PacmanEatingGhost.mp3",
-	"images/sounds/PacmanExtraLive.mp3",
-	"images/sounds/PacmanIntermission.mp3",
-	"images/sounds/PacmanOpeningSong.mp3",
-	"images/sounds/PacmanSiren.mp3",
-	"images/sounds/PacmanWakaWaka.mp3",
+	"../images/sounds/PacmanDies.mp3",
+	"../images/sounds/PacmanEatingCherry.mp3",
+	"../images/sounds/PacmanEatingGhost.mp3",
+	"../images/sounds/PacmanExtraLive.mp3",
+	"../images/sounds/PacmanIntermission.mp3",
+	"../images/sounds/PacmanOpeningSong.mp3",
+	"../images/sounds/PacmanSiren.mp3",
+	"../images/sounds/PacmanWakaWaka.mp3",
 ];
 
 var insertAudio;
