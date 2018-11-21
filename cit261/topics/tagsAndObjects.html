@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Tags and Objects</title>
+	<link rel="stylesheet" type="text/css" href="styles/tagsAndObjects.css">
+</head>
+<body>
+	<div class="container"><!-- object form -->
+		<div class="">
+            <form method="post" action="" class ="updateAccount" id="updateAccount">
+                <h1 class="login-title">Add Contestant time</h1>
+
+                <div class="updateFormSection">
+	                <label for="racerFirstname">Racer Name</label>
+	                <input type="text" name="racerFirstname" id="racerName" class="login-input" >
+                </div>
+                
+                <div class="updateFormSection">
+	                <label for="racerId">Racer Id</label>
+	                <input name="racerId" type="number" class="login-input" id="racerId"  >  
+                </div>
+
+                <div class="updateFormSection">
+	                <label for="racerTime">Racer Time (in minutes)</label>
+	                <input name="racerTime" type="number" class="login-input" id="racerTime"  >  
+                </div>
+                              
+                <button type="button" class="login-button" onclick="drawStick(), retrieveData()">Enter Racer</button>
+
+            </form>
+            <canvas class="drawPeople" id="drawPeople" width="300" height="100">
+            	
+            </canvas>
+        </div>
+	</div>
+	<br><hr><br>
+	<div class ="updateAccount container"><!-- media tags -->
+		<button class="login-button" onclick="insertSound()">Get a Random Sound</button>
+		<button class="login-button" onclick="insertVideo()">Get a "Random" Video</button>
+
+		<div id="video"></div>
+		<div id="audio"></div>
+	</div>
+	<br><hr><br>
+	<div class="container updateAccount">		
+		<button class="login-button" onclick="displayTime()">Get Runners Time</button>
+		<div id="runnersContainer">
+			<ul id="runnersList">
+				
+			</ul>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="scripts/tagsAndObjects.js"></script>
+</body>
+</html>
