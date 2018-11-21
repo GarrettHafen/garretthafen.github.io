@@ -165,9 +165,21 @@ function insertSound() {
 }
 
 //DISPLAY RUNNERS TIME
-var list = document.getElementById("runnersList");
+
+var bigList;
+var listContainer = document.getElementById("runnersContainer");
 //get runner input
 function displayTime(){
+	while(listContainer.firstChild){
+		listContainer.removeChild(listContainer.firstChild);
+	}
+
+	var bigList = document.createElement('UL');
+		bigList.setAttribute("id", "runnersList");
+		listContainer.appendChild(bigList);
+
+	var list = document.getElementById("runnersList");
+
 	var runnersArray = JSON.parse(localStorage.getItem("Runners"));
 	for(var i = 0; i<runnersArray.length; i++){
 		var displayRunner ='';
