@@ -1,0 +1,47 @@
+
+.content{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.container{
+	margin: 25px;
+	transition-property: transform;
+    transition-duration: 1.5s
+}
+.container:hover{
+	transform: skew(-20deg);
+}
+
+.example{
+	margin: 25px;
+}
+
+.fromTop{
+	transition-property: transform;
+    transition-duration: 1.5s
+}
+.fromTop:hover{
+	transform: scale(3) translate(300px);
+	color: limegreen;
+}
+
+.fromBottom{
+	transition-property: transform;
+    transition-duration: 1.5s;
+}
+.fromBottom:hover{
+	transform: rotate(180deg);
+
+}
+.dumb{
+	font-weight: 100;
+	color: orange;
+	transition: font-weight font-size color ;
+
+}
+.dumb:hover{
+	font-weight: 900;
+	font-size: 3em;
+	color: purple;
+}
