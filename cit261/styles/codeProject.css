@@ -46,6 +46,15 @@ body{
 }
 
 /*dropdowns*/
+.dropDowns{
+	display: flex;
+	flex-direction: row;
+}
+.dropDowns div{
+	width: 25%;
+	height: 150px;
+	background-color: grey;
+}
 /*dropdowns*/
 
 /*form&Images*/
