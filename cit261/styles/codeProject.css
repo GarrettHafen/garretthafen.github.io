@@ -1,10 +1,14 @@
-/*change these*/
-.floatingClickMe, .floatingHover{
-	display: none;
-}
-/*change these*/
+/*fonts
+font-family: 'Patrick Hand', cursive; sub headers
+font-family: 'Permanent Marker', cursive; big header
+font-family: 'Impact', Charcoal, sans-serif;
+*/
+
+/*---------------change these---------------*/
 body{
 	margin:0;
+	font-family: 'Impact', Charcoal, sans-serif;
+	overflow-x: hidden;
 }
 .container{
 
@@ -17,6 +21,16 @@ body{
 	padding: 200px 0;
 	font-size: 3em;
 	background: url("../images/victoryBackground.png") no-repeat fixed center;
+	font-family: 'Permanent Marker', cursive;
+}
+.header h1{
+	animation: growHeader 3s infinite;
+	
+}
+@keyframes growHeader{
+	0%{transform: scale(1);}
+	50%{transform: scale(2);}
+	100%{transform: scale(1);}
 }
 .quoteRequest{
 	width: 100%;
@@ -41,23 +55,99 @@ body{
 }
 .quoteRequest h2{
 	color: green;
-	font-size: 2em;
+	font-size: 5em;
 	margin: 50px 0;
+	font-family: 'Patrick Hand', cursive;
+	font-weight: 100;
+	text-shadow: 2px 2px 8px rgba(0,0,0, 1);
+	animation: spinHeader 5s infinite;
+	animation-timing-function: ease-in-out;
+	
+}
+@keyframes spinHeader{
+	0%{transform: rotate(0deg);}
+	20%{transform: rotate(0deg);}
+	30%{transform: rotate(1080deg);}
+	60%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
 }
 
-/*dropdowns*/
+/*---------------dropdowns---------------*/
 .dropDowns{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	top: -256px;
+	transition: top 1s;
 }
-.dropDowns div{
-	width: 25%;
-	height: 150px;
-	background-color: grey;
+/*top:-265px;*/
+.dD{
+	width: 300px;
+	height: 300px;
+	background-color: #535860;
+	border: 1px solid black;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
-/*dropdowns*/
+.animationExample{
+	left: 4.65%;
+	top:-265px;
+	position: absolute;
+	transition: top 1s;
+}
+.youtubeEmbed{
+	left: 29.65%;
+	top:-265px;
+	position: absolute;
+	transition: top 1s;
+}
+.soundBoard{
+	left: 54.5%;
+	top:-265px;
+	position: absolute;
+	transition: top 1s;
+}
+.spinningIcon{
+	left: 79.5%;
+	top:-265px;
+	position: absolute;
+	transition: top 1s;
+}
+.animationExample:hover, .youtubeEmbed:hover, .soundBoard:hover, .spinningIcon:hover{
+	top:0;
+}
+.Content{
+    height: 256px;
+    text-align: center;
+    border: 1px solid white;
+}
+.AE p{
+	padding-top: 75px;
+}
+.YT p{
+	padding-top: 15px;
+}
+.ddLabel{
+	width: 85%;
+	margin:auto;
+	text-align: center;
+	margin: 5px auto 0;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 1.5em; 
+	animation: flashLabel 3s infinite;
+	
+}
+@keyframes flashLabel{
+	0%{transform: skew(0deg);}
+	50%{transform: skew(45deg);}
+	100%{transform: skew(0deg);}
+}
 
-/*form&Images*/
+/*---------------dropdowns---------------*/
+
+/*---------------form&Images---------------*/
 .formAndImages{
 	width: 60%;
 	margin: auto; 
@@ -120,14 +210,37 @@ body{
 .coolForm p{
 	margin: 30px 0 0;
 	text-align: justify;
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bold;
 }
-/*form&Images*/
 
-/*blackie*/
+/* effect-shine */
+.coolForm button:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.wrong{
+	border: 1px solid red;
+}
+/*---------------form&Images---------------*/
+
+/*---------------blackie---------------*/
 .blackie1{
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 190px;
   box-sizing: border-box;
   background-color: black; 
 }
@@ -174,9 +287,114 @@ body{
   transform: skewY(3deg);
   overflow: hidden;
   }
-/*blackie*/
+/*---------------blackie---------------*/
 .disclaimer{
 	color: pink;
 	z-index: 1;
 	padding-top: 25px;
 }
+
+/*---------------parade---------------*/
+.removable{
+	position: absolute;
+	height: 40px;
+	width: 150px;
+	line-height: 32px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 1.3em;
+	overflow: hidden;
+
+}
+.parade{
+	animation: parade 8s 1;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+@keyframes parade {
+	0% {
+		transform:translateX(0px);
+	}
+
+	100%{
+		transform:translateX(2500px);
+	}
+}
+/*---------------parade---------------*/
+
+/*---------------video---------------*/
+.randomVideo{
+	width: 280px;	
+	margin-top: 25px;
+}
+/*---------------video---------------*/
+
+/*---------------soundBoard---------------*/
+.SB table{
+	width:100%;
+}
+.SB table td{
+	width: 32%;
+	border: 1px black solid;
+	cursor: pointer;
+}
+.SB table tr{
+	height: 83px;
+}
+/*---------------soundBoard---------------*/
+
+
+/*---------------rotatingGif---------------*/
+.SI img{
+	width: 250px;	
+}
+/*---------------rotatingGif---------------*/
+
+/*---------------infoLabels---------------*/
+.moreInfo {
+  padding: 0 0.4em;
+  font-style: normal;
+  position: relative;
+  font-family: 'Patrick Hand', cursive; 
+  
+}
+.moreInfo::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; left: 0;
+  opacity: 0;
+  width: 230px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+.moreInfo::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+.moreInfo:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+.moreInfo:hover::after,
+.moreInfo:hover::before {opacity: 1;}
+.moreInfo:hover::after {top: 30px;}
+.moreInfo:hover::before {top: 20px;}
+/*---------------infoLabels---------------*/

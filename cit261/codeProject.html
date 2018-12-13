@@ -3,43 +3,78 @@
 <head>
 	<title>Boost Your Stream</title>
 	<link rel="stylesheet" type="text/css" href="styles/codeProject.css">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Permanent+Marker" rel="stylesheet">
 </head>
-<body>
+<body onload="insertVideo()">
 		<div class="dropDowns">
-			<div class="animationExample"></div>
-			<div class="youtubeEmbed"></div>
-			<div class="soundBoard"></div>
-			<div class="spinningIcon"></div>
+			<div class="animationExample dD">
+				<div class="Content AE">
+					<p>Enter Your Twitch Channel to see your followers.</p>
+					<input type="text" name="twitchChannel" id="userInputTC">
+					<button onclick="showFollowers()">Show me</button>
+				</div>
+				<div class="ddLabel">Animations</div>
+			</div>
+			<div class="youtubeEmbed dD">
+				<div class="Content YT" id="videoContainer">
+					<p>click <b style="cursor: pointer;" onclick="insertVideo()">HERE</b> for more videos</p>
+				</div>
+				<div class="ddLabel">Fan Club</div>
+			</div>
+			<div class="soundBoard dD">
+				<div class="Content SB" id="soundContainer">
+					<table>
+						<tr>
+							<td onclick="insertSound('death')">Death Sound</td>
+							<td onclick="insertSound('doh')">Doh!</td>
+							<td onclick="insertSound('crick')">Crickets</td>
+						</tr>
+						<tr>
+							<td onclick="insertSound('ouch')">Ouch</td>
+							<td onclick="insertSound('appl')">Applause</td>
+							<td onclick="insertSound('coin')">Coin Sound</td>
+						</tr>
+						<tr>
+							<td onclick="insertSound('trium')">Triumph</td>
+							<td onclick="insertSound('final')">Final CountDown</td>
+							<td onclick="insertSound('music')">Music</td>
+						</tr>
+					</table>
+				</div>
+				<div class="ddLabel">Sound Board</div>
+			</div>
+			<div class="spinningIcon dD">
+				<div class="Content SI">
+					<img src="images/rotatingGifAttempt2.gif">
+				</div>
+				<div class="ddLabel">Spinning Icons</div>
+			</div>
 		</div>
-	<div class="container">
-		
+	<div class="container" id="container">
 		<div class="header">
-			<span class="floatingClickMe">Click Me --></span>
-			<span class="floatingHover">^-- Hover</span>
 			<h1 class="mainHeader">Boost Your Stream</h1>
 		</div>
 		<div class="blackie1"></div>
 		<div class="quoteRequest">
 			<h2>Request a Quote</h2>
 			<div class="formAndImages">
-				<form class="coolForm">
+				<form class="coolForm" method="post">
 					<label for="name">Name</label>
-					<input type="text" name="name">
-					
-					<label for="channel">Channel <span class="moreInfo"></span><span class="twitchVerified"></span></label>
-					<input type="text" name="channel">
+					<input type="text" name="name" id="name">
+					<label for="channel">Channel Name <span data-info="Enter your channel name here so we can look it up and see how awesome you are!" class="moreInfo">&#9432;</span></label>
+					<input type="text" name="channel" id="channel">
 					
 					<label for="email">Email Address</label>
-					<input type="text" name="email">
+					<input type="text" name="email" id="email">
 					
-					<label for="streamingProgram">Streaming Program <span class="moreInfo"></span> </label>
-					<input type="text" name="streamingProgram">
+					<label for="software">Streaming Software<span data-info="What software do you use to stream?" class="moreInfo">&#9432;</span> </label>
+					<input type="text" name="software" id="software">
 
 					<p>Use this section to provide as much information as you can, such as: streaming platform, streaming software. What kind of overlay/package are you looking for? Do you have any examples of what you want your overlay to look like? Any information about your expected budget would be appreciated.</p>
 					<label for="otherInfo">Additional Info:</label>
-					<textarea rows="7"></textarea>
+					<textarea rows="7" id="otherInfo"></textarea>
 
-					<button>Gimme dat Swag</button>
+					<button onclick="validateForm(); return false" >Gimme dat Swag</button>
 				</form>
 				<div class="images">
 					<div class="imagesTop"></div>
@@ -56,3 +91,4 @@
 	<script type="text/javascript" src="scripts/codeProject.js"></script>
 </body>
 </html>
+
