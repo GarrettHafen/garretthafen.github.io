@@ -437,7 +437,7 @@ body{
 /*---------------previous request---------------*/
 
 /*---------------thankYou---------------*/
-.thankYou{
+.thankYou, .back{
 	width:500px;
 	height: 500px;
 	position: absolute;
@@ -447,6 +447,22 @@ body{
 	border-radius: 15px;
 	display: none;
 	box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.75);
+	perspective: 1000px;
+	transition: 2s;
+	transform-style: preserve-3d;
+	
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front{
+	z-index: 2;
+}
+.back{
+	transform: rotateY(180deg);
 }
 .closeThankYou {
   position: absolute;

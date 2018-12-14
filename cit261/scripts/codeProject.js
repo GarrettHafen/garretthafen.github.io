@@ -229,3 +229,8 @@ function showThankYou(){
 function removeThankYou(){
 	thankYouContainer.style.display="none";
 }
+
+//flip the thank you card before removing
+function flip(){
+	document.getElementById("thankYou").style.transform = "rotateY(180deg)";
+}
