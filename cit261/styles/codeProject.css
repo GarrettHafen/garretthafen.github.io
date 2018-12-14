@@ -48,7 +48,7 @@ body{
 	right: 0;
 	z-index: -1;
 	display: block;
-	background-image: url("../images/codeImage.png");
+	background-image: url("../images/codeImage.PNG");
 	filter: blur(3px);
   	width: 100%;
   	height: 1000px;
