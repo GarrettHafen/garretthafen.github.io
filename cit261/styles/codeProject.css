@@ -22,6 +22,7 @@ body{
 	font-size: 3em;
 	background: url("../images/victoryBackground.png") no-repeat fixed center;
 	font-family: 'Permanent Marker', cursive;
+	z-index: 0;
 }
 .header h1{
 	animation: growHeader 3s infinite;
@@ -29,7 +30,7 @@ body{
 }
 @keyframes growHeader{
 	0%{transform: scale(1);}
-	50%{transform: scale(2);}
+	50%{transform: scale(1.75);}
 	100%{transform: scale(1);}
 }
 .quoteRequest{
@@ -81,8 +82,8 @@ body{
 	width: 100%;
 	top: -256px;
 	transition: top 1s;
+	z-index: 1;
 }
-/*top:-265px;*/
 .dD{
 	width: 300px;
 	height: 300px;
@@ -108,6 +109,7 @@ body{
 	top:-265px;
 	position: absolute;
 	transition: top 1s;
+	z-index: 1;
 }
 .spinningIcon{
 	left: 79.5%;
@@ -116,6 +118,9 @@ body{
 	transition: top 1s;
 }
 .animationExample:hover, .youtubeEmbed:hover, .soundBoard:hover, .spinningIcon:hover{
+	top:0;
+}
+.dD:hover, .ddLabel:hover{
 	top:0;
 }
 .Content{
@@ -144,7 +149,9 @@ body{
 	50%{transform: skew(45deg);}
 	100%{transform: skew(0deg);}
 }
-
+.soundBoard table td{
+	user-select: none;
+}
 /*---------------dropdowns---------------*/
 
 /*---------------form&Images---------------*/
@@ -193,7 +200,7 @@ body{
 	resize: none;
 	font-size: .75em;
 }
-.coolForm button{
+.fakeButton{
     width: 100%;
     height: 50px;
     padding: 0;
@@ -206,6 +213,9 @@ body{
     cursor: pointer;
     outline: 0;
     margin-bottom: 10px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.5;
+    font-size: 2em;
 }
 .coolForm p{
 	margin: 30px 0 0;
@@ -215,7 +225,7 @@ body{
 }
 
 /* effect-shine */
-.coolForm button:hover {
+.fakeButton:hover {
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
@@ -398,3 +408,121 @@ body{
 .moreInfo:hover::after {top: 30px;}
 .moreInfo:hover::before {top: 20px;}
 /*---------------infoLabels---------------*/
+
+/*---------------previous request---------------*/
+.previousRequest{
+	height: 400px;
+	background-color: black;
+}
+.requestContainer{
+	width: 60%;
+	height: 375px;
+	background-color: darkgrey;
+	margin: auto;
+}
+.requestContainer h1{
+	font-family: 'Patrick Hand', cursive;
+	margin-top: 0;
+	padding-top: 25px;
+}
+.requestContainer ul{
+	width: 50%;
+	margin:auto;
+	text-align: left;
+}
+.requestContainer ul li{
+	list-style-type: none;
+	padding: 10px;
+}
+/*---------------previous request---------------*/
+
+/*---------------thankYou---------------*/
+.thankYou{
+	width:500px;
+	height: 500px;
+	position: absolute;
+	top: 1150px;
+	left: 686px;
+	background-color: darkgrey;
+	border-radius: 15px;
+	display: none;
+	box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.75);
+}
+.closeThankYou {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.closeThankYou:hover {
+  opacity: 1;
+}
+.closeThankYou:before, .closeThankYou:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.closeThankYou:before {
+  transform: rotate(45deg);
+}
+.closeThankYou:after {
+  transform: rotate(-45deg);
+}
+.thumbsUp{
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+	animation: jiggle 2s infinite;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both ;
+	overflow: hidden;
+}
+
+@keyframes jiggle{
+	0% {
+		transform:rotate(3deg);
+	}
+	10% {
+		transform:rotate(-3deg);
+	}
+	20% {
+		transform:rotate(3deg);
+	}
+	30% {
+		transform:rotate(-3deg);
+	}
+	40% {
+		transform:rotate(3deg);
+	}
+	45% {
+		transform:rotate(-3deg);
+	}
+	50% {
+		transform:rotate(3deg);
+	}
+	55% {
+		transform:rotate(-3deg);
+	}
+	60% {
+		transform:rotate(3deg);
+	}
+	70% {
+		transform:rotate(-3deg);
+	}
+	80% {
+		transform:rotate(3deg);
+	}
+	90% {
+		transform:rotate(-3deg);
+	}
+	100% {
+		transform:rotate(3deg);
+	}
+
+}
+/*---------------thankYou---------------*/

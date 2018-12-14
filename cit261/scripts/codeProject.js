@@ -47,7 +47,7 @@ var mostRecentFollowers =[];
 }
 //testing timeing
 function getParade(mostRecentFollowers){
-	for (var i = 0; i <= 20; i++) {
+	for (var i = 0; i <= 10; i++) {
 		time = getRandomTopValue(150,800);
 		setTimeout(function() { parade(mostRecentFollowers); }, time);
 	}
@@ -157,8 +157,6 @@ function validateForm(){
 	info.software = software;
 	info.otherInfo = otherInfo;
 
-	console.log(info);
-
 	for(var index in info){
 		for(var index in info){
 			if(info[index]===""){
@@ -166,12 +164,68 @@ function validateForm(){
 			}else{
 				document.getElementById(index).classList.remove("wrong");
 			}
-		}
-		
+		}	
 	}
 	if(info[index]===""){
-			return false;
-		}else{
-			/*start here, store the object, clear the form. display the object*/
-		}
+		return false;
+	}else{
+		 
+	}
+
+	showThankYou();
+	localStorage.setItem("Request", JSON.stringify(info));
+	//thank you modal that folds out or something fancy
+	
+	//print previous request
+	printRequest();
+
+	//clear Form
+	document.getElementById("name").value = "";
+	document.getElementById("channel").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("software").value = "";
+	document.getElementById("otherInfo").value = "";		
+	
+}
+
+//function to print previous request
+function printRequest(){
+	var storedRequest = JSON.parse(localStorage.getItem("Request"));
+	var insertRequest;
+	var requestContainer = document.getElementById("insertRequestContainer");
+	while (requestContainer.hasChildNodes()){
+		requestContainer.removeChild(requestContainer.lastChild);
+	}
+
+	for(var index in storedRequest){
+		var upperCase = index[0].toUpperCase() + index.slice(1);
+		insertRequest = document.createElement("LI");
+		insertRequest.innerHTML = upperCase + ": " + storedRequest[index];
+		insertRequest.setAttribute("class","recentRequest");
+		requestContainer.appendChild(insertRequest);
+	}
+}
+// need second function so the other can remove what is currenlty showing
+function printRequestOnLoad(){
+	var storedRequest = JSON.parse(localStorage.getItem("Request"));
+	var insertRequest;
+	var requestContainer = document.getElementById("insertRequestContainer");
+	for(var index in storedRequest){
+		var upperCase = index[0].toUpperCase() + index.slice(1);
+		insertRequest = document.createElement("LI");
+		insertRequest.innerHTML = upperCase + ": " + storedRequest[index];
+		insertRequest.setAttribute("class","recentRequest");
+		requestContainer.appendChild(insertRequest);
+	}
+}
+
+var thankYouContainer = document.getElementById("thankYou");
+//add thankyou after form submit
+function showThankYou(){
+	thankYouContainer.style.display="block";
+}
+
+//remove thankyou when x is clicked
+function removeThankYou(){
+	thankYouContainer.style.display="none";
 }

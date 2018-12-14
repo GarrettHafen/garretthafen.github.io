@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/codeProject.css">
 	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Permanent+Marker" rel="stylesheet">
 </head>
-<body onload="insertVideo()">
+<body onload="insertVideo(); printRequestOnLoad()">
 		<div class="dropDowns">
 			<div class="animationExample dD">
 				<div class="Content AE">
@@ -57,7 +57,7 @@
 		<div class="blackie1"></div>
 		<div class="quoteRequest">
 			<h2>Request a Quote</h2>
-			<div class="formAndImages">
+			<div class="formAndImages" id="formAndImages">
 				<form class="coolForm" method="post">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name">
@@ -74,7 +74,7 @@
 					<label for="otherInfo">Additional Info:</label>
 					<textarea rows="7" id="otherInfo"></textarea>
 
-					<button onclick="validateForm(); return false" >Gimme dat Swag</button>
+					<div class="fakeButton" onclick="validateForm(); return false" >Gimme dat Swag</div>
 				</form>
 				<div class="images">
 					<div class="imagesTop"></div>
@@ -84,6 +84,21 @@
 		</div>
 		<div class="blackie2">
 			<p class="disclaimer">Note: this is for a school assignment, response times may vary. The more information you provide, the better the response time will be. </p>
+		</div>
+		<div class="previousRequest">
+			<div class="requestContainer">
+				<h1>Recent Request</h1>
+				<ul id="insertRequestContainer">
+					
+				</ul>
+			</div>
+			
+		</div>
+		<div class="thankYou" id="thankYou">
+			<span class="closeThankYou" id="closeThankYou" onclick="removeThankYou()"></span>
+			<h1>Thank you</h1>
+			<p>All you need to do now is wait, we'll get back to you soon so keep an eye on the horizon.......or just your email.</p>
+			<img class="thumbsUp" src="images/thumbsUp.png">
 		</div>
 	</div>
 	<div class="instruction-container" id="channelInfo"></div>
