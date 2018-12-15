@@ -91,6 +91,7 @@ body{
 	border: 1px solid black;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    z-index: 1;
 }
 .animationExample{
 	left: 4.65%;
@@ -126,13 +127,14 @@ body{
 .Content{
     height: 256px;
     text-align: center;
-    border: 1px solid white;
 }
 .AE p{
 	padding-top: 75px;
+	margin-top: 0;
 }
 .YT p{
 	padding-top: 15px;
+	margin-top: 0;
 }
 .ddLabel{
 	width: 85%;
@@ -171,14 +173,57 @@ body{
 	justify-content: center;
 
 }
-.imagesTop, .imagesBottom{
-	border: 1px solid black;
+.cube{
 	width: 90%;
 	height: 250px;
 	margin: auto;
 	max-width: 250px;
+	perspective: none;
+  	perspective-origin: 0 0;
+  	position: relative;
 }
-
+.image{
+	position: absolute;
+	width: 100%;
+	border: 1px solid black;
+}
+.imagesTop, .imagesBottom{
+	transform-style: preserve-3d;
+	animation: spin 8s infinite linear;
+	transition: all 1s linear;
+	position: relative;
+}
+.imagesTop div, .imagesBottom div{
+	position: absolute;
+	width: 250px;
+	height: 250px;
+}
+div.image1{
+	/*background-color: red;*/
+	height: 250px;
+	transform: translateZ(-100px) rotateY(180deg);
+}
+div.image2{
+	/*background-color: green;*/
+	height: 250px;
+	transform:rotateY(-270deg) translateX(100px);
+  	transform-origin: top right;
+}
+div.image3{
+	/*background-color: blue;*/
+	height: 250px;
+	transform:rotateY(270deg) translateX(-100px);
+  	transform-origin: center left;
+}
+div.image4{
+	/*background-color: yellow;*/
+	height: 250px;
+	transform: translateZ(149px);
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
 .coolForm{
 	text-align: center;
 	margin: 0 auto;
@@ -350,14 +395,23 @@ body{
 .SB table{
 	width:100%;
 }
+.SB table tr{
+	height: 75px;
+}
 .SB table td{
-	width: 32%;
+	width: 30%;
 	border: 1px black solid;
 	cursor: pointer;
+	border-radius: 15px;
+  	box-shadow: 0 4px #999;
+  	background-color: darkgrey;
 }
-.SB table tr{
-	height: 83px;
+.SB table td:active{
+  
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }
+
 /*---------------soundBoard---------------*/
 
 

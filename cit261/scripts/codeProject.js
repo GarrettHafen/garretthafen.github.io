@@ -10,7 +10,7 @@ var userInputTC = document.getElementById("userInputTC").value;
 	} else if(userInputTC === "aNastyNate"){
 		userId = "92097942";
 	} else{
-		alert("Not valid, don't for get capitals matter");
+		alert("Not valid, don't forget capitals matter");
 		return;
 	}
 //get 10 most recent followers
@@ -37,13 +37,14 @@ var mostRecentFollowers =[];
 
 			getJSONUser(followerURL, function(response){
 				followerName = response.data[0].display_name;
-				mostRecentFollowers.push(followerName); 
+				mostRecentFollowers.push(followerName);
+				if(mostRecentFollowers.length === 19){
+					getParade(mostRecentFollowers);
+				}
 			});
+			
 		}
-		
 	});
-	setTimeout(function() { getParade(mostRecentFollowers); }, 101);
-
 }
 //testing timeing
 function getParade(mostRecentFollowers){
@@ -61,11 +62,13 @@ function parade(mostRecentFollowers){
 		var leftRand = getRandomTopValue(-400, -150);
 		var follower = document.createElement("div");
 		follower.innerHTML = mostRecentFollowers[rand];
+
 		follower.setAttribute("class","removable parade");
 		follower.style.top = topRand +'px';
 		follower.style.left = leftRand +'px';
 		body.appendChild(follower);
 }
+
 
 //generate random number for top value
 function getRandomTopValue(min, max){
@@ -75,16 +78,16 @@ function getRandomTopValue(min, max){
 //INSERT A RANDOM VIDEO
 //create video array
 var videos = [
-	/*BOTW*/"https://www.youtube.com/embed/4vBKgbOELzg",
-	/*staxel*/"https://youtube.com/embed/9hyMY6xA6hk",
-	/*slimeRancher*/"https://youtube.com/embed/Gq3Xg7pLkSM",
-	/*legoStarWars*/"https://youtube.com/embed/UwJGg9McOMM",
-	/*skyrim*/"https://youtube.com/embed/e1ATJxDpEGA",
-	/*arkRag*/"https://youtube.com/embed/fwkQKhtOUA0",
-	/*arkMad*/"https://youtube.com/embed/UXTNkBYaE_E",
-	/*7d2dA16*/"https://youtube.com/embed/J7hZLz0Epog",
-	/*annunakiArk*/"https://youtube.com/embed/OJLBdMPJbz4",
-	/*stardew*/"https://youtube.com/embed/5O1bVLF7hJc"	
+	/*0BOTW*/"https://www.youtube.com/embed/4vBKgbOELzg",
+	/*1staxel*/"https://youtube.com/embed/9hyMY6xA6hk",
+	/*2slimeRancher*/"https://youtube.com/embed/Gq3Xg7pLkSM",
+	/*3legoStarWars*/"https://youtube.com/embed/UwJGg9McOMM",
+	/*4skyrim*/"https://youtube.com/embed/e1ATJxDpEGA",
+	/*5arkRag*/"https://youtube.com/embed/fwkQKhtOUA0",
+	/*6arkMad*/"https://youtube.com/embed/UXTNkBYaE_E",
+	/*77d2dA16*/"https://youtube.com/embed/J7hZLz0Epog",
+	/*8annunakiArk*/"https://youtube.com/embed/OJLBdMPJbz4",
+	/*9stardew*/"https://youtube.com/embed/5O1bVLF7hJc"	
 ];
 
 var insertIframe;
@@ -96,7 +99,7 @@ function insertVideo(){
 		videoContainer.removeChild(insertIframe);
 	}	
 	//create iframe with random video
-	var randomVideo = videos[Math.floor(Math.random()* 9)];
+	var randomVideo = videos[Math.floor(Math.random()* 10)];
 
 	insertIframe = document.createElement("iframe");
 	insertIframe.setAttribute("src", randomVideo);
