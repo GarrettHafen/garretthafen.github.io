@@ -49,7 +49,7 @@ var mostRecentFollowers =[];
 //testing timeing
 function getParade(mostRecentFollowers){
 	for (var i = 0; i <= 10; i++) {
-		time = getRandomTopValue(150,800);
+		time = getRandomValue(150,800);
 		setTimeout(function() { parade(mostRecentFollowers); }, time);
 	}
 }
@@ -58,8 +58,8 @@ function getParade(mostRecentFollowers){
 function parade(mostRecentFollowers){
 		var body = document.getElementById("container");
 		var rand = Math.floor(Math.random() * 11);
-		var topRand = getRandomTopValue(100, 550);
-		var leftRand = getRandomTopValue(-400, -150);
+		var topRand = getRandomValue(200, 750);
+		var leftRand = getRandomValue(-400, -150);
 		var follower = document.createElement("div");
 		follower.innerHTML = mostRecentFollowers[rand];
 
@@ -71,7 +71,7 @@ function parade(mostRecentFollowers){
 
 
 //generate random number for top value
-function getRandomTopValue(min, max){
+function getRandomValue(min, max){
 	return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
