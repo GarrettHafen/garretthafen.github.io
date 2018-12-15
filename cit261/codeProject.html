@@ -23,7 +23,7 @@
 			</div>
 			<div class="soundBoard dD">
 				<div class="Content SB" id="soundContainer">
-					<table>
+					<table cellspacing="7">
 						<tr>
 							<td onclick="insertSound('death')">Death Sound</td>
 							<td onclick="insertSound('doh')">Doh!</td>
@@ -60,25 +60,39 @@
 			<div class="formAndImages" id="formAndImages">
 				<form class="coolForm" method="post">
 					<label for="name">Name</label>
-					<input type="text" name="name" id="name">
+					<input type="text" name="name" id="name" onfocusout="singleValidation(id)">
 					<label for="channel">Channel Name <span data-info="Enter your channel name here so we can look it up and see how awesome you are!" class="moreInfo">&#9432;</span></label>
-					<input type="text" name="channel" id="channel">
+					<input type="text" name="channel" id="channel" onfocusout="singleValidation(id)">
 					
 					<label for="email">Email Address</label>
-					<input type="text" name="email" id="email">
+					<input type="text" name="email" id="email" onfocusout="singleValidation(id)">
 					
 					<label for="software">Streaming Software<span data-info="What software do you use to stream?" class="moreInfo">&#9432;</span> </label>
-					<input type="text" name="software" id="software">
+					<input type="text" name="software" id="software" onfocusout="singleValidation(id)">
 
 					<p>Use this section to provide as much information as you can, such as: streaming platform, streaming software. What kind of overlay/package are you looking for? Do you have any examples of what you want your overlay to look like? Any information about your expected budget would be appreciated.</p>
 					<label for="otherInfo">Additional Info:</label>
-					<textarea rows="7" id="otherInfo"></textarea>
+					<textarea rows="7" id="otherInfo" onfocusout="singleValidation(id)"></textarea>
 
-					<div class="fakeButton" onclick="validateForm(); return false" >Gimme dat Swag</div>
+					<div class="fakeButton" onclick="resetErrors(); return false" >Gimme dat Swag</div>
 				</form>
 				<div class="images">
-					<div class="imagesTop"></div>
-					<div class="imagesBottom"></div>
+					<div class="cube">
+						<div class="imagesTop">
+							<div class="image1 image"><img src="images/lol.jpg"></div>
+							<div class="image2 image"><img src="images/Fortnite.jpg"></div>
+							<div class="image3 image"><img src="images/overwatch.jpg"></div>
+							<div class="image4 image"><img src="images/ark.jpg"></div>
+						</div>
+					</div>
+					<div class="cube">
+						<div class="imagesBottom">
+							<div class="image1 image"><img src="images/ps4.jpg"></div>
+							<div class="image2 image"><img src="images/steam.jpg"></div>
+							<div class="image3 image"><img src="images/switchlogo.jpg"></div>
+							<div class="image4 image"><img src="images/xboxlogo.jpg"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -10,7 +10,7 @@ var userInputTC = document.getElementById("userInputTC").value;
 	} else if(userInputTC === "aNastyNate"){
 		userId = "92097942";
 	} else{
-		alert("Not valid, don't for get capitals matter");
+		alert("Not valid, don't forget capitals matter");
 		return;
 	}
 //get 10 most recent followers
@@ -37,18 +37,19 @@ var mostRecentFollowers =[];
 
 			getJSONUser(followerURL, function(response){
 				followerName = response.data[0].display_name;
-				mostRecentFollowers.push(followerName); 
+				mostRecentFollowers.push(followerName);
+				if(mostRecentFollowers.length === 19){
+					getParade(mostRecentFollowers);
+				}
 			});
+			
 		}
-		
 	});
-	setTimeout(function() { getParade(mostRecentFollowers); }, 101);
-
 }
 //testing timeing
 function getParade(mostRecentFollowers){
 	for (var i = 0; i <= 10; i++) {
-		time = getRandomTopValue(150,800);
+		time = getRandomValue(150,800);
 		setTimeout(function() { parade(mostRecentFollowers); }, time);
 	}
 }
@@ -57,34 +58,36 @@ function getParade(mostRecentFollowers){
 function parade(mostRecentFollowers){
 		var body = document.getElementById("container");
 		var rand = Math.floor(Math.random() * 11);
-		var topRand = getRandomTopValue(100, 550);
-		var leftRand = getRandomTopValue(-400, -150);
+		var topRand = getRandomValue(200, 750);
+		var leftRand = getRandomValue(-400, -150);
 		var follower = document.createElement("div");
 		follower.innerHTML = mostRecentFollowers[rand];
+
 		follower.setAttribute("class","removable parade");
 		follower.style.top = topRand +'px';
 		follower.style.left = leftRand +'px';
 		body.appendChild(follower);
 }
 
+
 //generate random number for top value
-function getRandomTopValue(min, max){
+function getRandomValue(min, max){
 	return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
 //INSERT A RANDOM VIDEO
 //create video array
 var videos = [
-	/*BOTW*/"https://www.youtube.com/embed/4vBKgbOELzg",
-	/*staxel*/"https://youtube.com/embed/9hyMY6xA6hk",
-	/*slimeRancher*/"https://youtube.com/embed/Gq3Xg7pLkSM",
-	/*legoStarWars*/"https://youtube.com/embed/UwJGg9McOMM",
-	/*skyrim*/"https://youtube.com/embed/e1ATJxDpEGA",
-	/*arkRag*/"https://youtube.com/embed/fwkQKhtOUA0",
-	/*arkMad*/"https://youtube.com/embed/UXTNkBYaE_E",
-	/*7d2dA16*/"https://youtube.com/embed/J7hZLz0Epog",
-	/*annunakiArk*/"https://youtube.com/embed/OJLBdMPJbz4",
-	/*stardew*/"https://youtube.com/embed/5O1bVLF7hJc"	
+	/*0BOTW*/"https://www.youtube.com/embed/4vBKgbOELzg",
+	/*1staxel*/"https://youtube.com/embed/9hyMY6xA6hk",
+	/*2slimeRancher*/"https://youtube.com/embed/Gq3Xg7pLkSM",
+	/*3legoStarWars*/"https://youtube.com/embed/UwJGg9McOMM",
+	/*4skyrim*/"https://youtube.com/embed/e1ATJxDpEGA",
+	/*5arkRag*/"https://youtube.com/embed/fwkQKhtOUA0",
+	/*6arkMad*/"https://youtube.com/embed/UXTNkBYaE_E",
+	/*77d2dA16*/"https://youtube.com/embed/J7hZLz0Epog",
+	/*8annunakiArk*/"https://youtube.com/embed/OJLBdMPJbz4",
+	/*9stardew*/"https://youtube.com/embed/5O1bVLF7hJc"	
 ];
 
 var insertIframe;
@@ -96,7 +99,7 @@ function insertVideo(){
 		videoContainer.removeChild(insertIframe);
 	}	
 	//create iframe with random video
-	var randomVideo = videos[Math.floor(Math.random()* 9)];
+	var randomVideo = videos[Math.floor(Math.random()* 10)];
 
 	insertIframe = document.createElement("iframe");
 	insertIframe.setAttribute("src", randomVideo);
@@ -143,8 +146,8 @@ function insertSound(sound) {
 //if text box value is empty change border
 
 function validateForm(){
-	var info = {};
 
+	var info = {};
 	var name = document.getElementById("name").value;
 	var channel = document.getElementById("channel").value;
 	var email = document.getElementById("email").value;
@@ -159,10 +162,13 @@ function validateForm(){
 
 	for(var index in info){
 		for(var index in info){
+
 			if(info[index]===""){
 				document.getElementById(index).classList.add("wrong");
+				document.getElementById(index).classList.add("wiggle");
 			}else{
 				document.getElementById(index).classList.remove("wrong");
+				document.getElementById(index).classList.remove("wiggle");
 			}
 		}	
 	}
@@ -233,4 +239,29 @@ function removeThankYou(){
 //flip the thank you card before removing
 function flip(){
 	document.getElementById("thankYou").style.transform = "rotateY(180deg)";
+}
+
+//reset errors to wiggle each time
+function resetErrors(){
+	var resetStuff = document.getElementsByClassName("wiggle");
+	var IdStore = new Array();
+	if(resetStuff.length != 0){
+		for(var i =0; i< resetStuff.length; i++){
+			IdStore[i] = resetStuff[i].id;
+		}
+
+		for (var j=0; j<IdStore.length; j++){
+			document.getElementById(IdStore[j]).classList.remove("wiggle");
+			document.getElementById(IdStore[j]).classList.remove("wrong");
+			
+		}
+		setTimeout(function() { validateForm(); }, 50);
+	}else{
+		validateForm();
+	}
+}
+
+//single validate when leaving input to clear red box
+function singleValidation(id){
+	document.getElementById(id).classList.remove("wrong");
 }
