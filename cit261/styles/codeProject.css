@@ -289,6 +289,54 @@ div.image4{
 .wrong{
 	border: 1px solid red;
 }
+.wiggle{
+	animation: wiggle 2s 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both ;
+	overflow: hidden;
+}
+
+@keyframes wiggle{
+	0% {
+		transform:rotate(3deg);
+	}
+	10% {
+		transform:rotate(-3deg);
+	}
+	20% {
+		transform:rotate(3deg);
+	}
+	30% {
+		transform:rotate(-3deg);
+	}
+	40% {
+		transform:rotate(3deg);
+	}
+	45% {
+		transform:rotate(-3deg);
+	}
+	50% {
+		transform:rotate(3deg);
+	}
+	55% {
+		transform:rotate(-3deg);
+	}
+	60% {
+		transform:rotate(3deg);
+	}
+	70% {
+		transform:rotate(-3deg);
+	}
+	80% {
+		transform:rotate(3deg);
+	}
+	90% {
+		transform:rotate(-3deg);
+	}
+	100% {
+		transform:rotate(0deg);
+	}
+
 /*---------------form&Images---------------*/
 
 /*---------------blackie---------------*/

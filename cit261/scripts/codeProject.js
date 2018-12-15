@@ -164,6 +164,7 @@ function validateForm(){
 		for(var index in info){
 			if(info[index]===""){
 				document.getElementById(index).classList.add("wrong");
+				document.getElementById(index).classList.add("wiggle");
 			}else{
 				document.getElementById(index).classList.remove("wrong");
 			}
