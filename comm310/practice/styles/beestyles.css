@@ -1,0 +1,54 @@
+/*READ THESE NOTES!*/
+/*This document is filled with instructions/help in the form of comments*/
+/*This is how you write a CSS comment*/
+/*It is suggested that you work through this assignment by following the comments/prompts in this CSS file from top to bottom*/
+
+
+.showme{
+	background-color: yellow;
+}
+
+.upperCase{
+	text-transform: uppercase;
+}
+
+#production{
+	color: purple;
+}
+
+#harvesting{
+	color: red;
+}
+
+#bottling{
+	color: brown;
+}
+
+header{
+	border: dashed 1px green;
+}
+
+p{
+	color: blue;
+}
+
+li .bolded{
+	font-weight: bold;
+}
+
+#production-section p{
+	color: green;
+}
+
+nav ul>li a{
+	color: red;
+}
+
+h1+p{
+	padding-left: 20px;
+}
+
+li:nth-child(2){
+	padding: 10px;
+}
+
