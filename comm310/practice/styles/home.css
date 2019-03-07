@@ -2,7 +2,6 @@ body{
 	margin: 0;
 	font-family: "Arial", Gadget, sans-serif;	
 	background-color: #f8ffb0;
-
 }
 header{
 	top: 0;
@@ -44,7 +43,6 @@ nav{
 	position: absolute;
 	height:39px;
 	width: 100%;
-	
 }
 nav ul{
 	width: 870px;
