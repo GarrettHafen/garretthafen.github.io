@@ -3,16 +3,20 @@
 /* --------------------------------------------- */
 /* These are the colors of the boxes under the Branding section */
 #swatch1{
-	background-color: #000;
+	background-color: #2f2235;
+	border: 1px solid black;
 }	
 #swatch2{
-	background-color: #444;
+	background-color: #3F3244;
+	border: 1px solid black;
 }	
 #swatch3{
-	background-color: #888;
+	background-color: #60495A;
+	border: 1px solid black;
 }	
 #swatch4{
-	background-color: #aaa;
+	background-color: #BFC3BA;
+	border: 1px solid black;
 }		
 
 /* ----------------------------------------------------- */
@@ -21,11 +25,13 @@
 /* These are the font families of all the headings and body copy */
 
 body{
-	font-family: ;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #3F3244;
+	color: #BFC3BA;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: ;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 
@@ -36,56 +42,63 @@ h1,h2,h3,h4,h5,h6{
 
 /* Main Navigation Style */
 #mainnav{
-	
+	background-color: #BFC3BA
 }
 #mainnav ul{
-
+	padding: 15px 0;
+	text-align: center;
 }
 #mainnav li{
-
+	display: inline;
+	padding: 10px;
 }
 #mainnav a:link{
-	color: #;
+	color: #2F2235;
+	text-decoration: none;
 	/* other styles */
 }
 #mainnav a:visited{
-	color: #;
+	color: #2F2235;
 	/* other styles */
 }
 #mainnav a:hover{
-	color: #;
+	color: #60495A;
+	
 	/* other styles */
 }
 #mainnav a:active{
-	color: #;
+	color: #ffffff;
 	/* other styles */
 }
 
 
 /* Secondary Navigation Style */
 #secondnav{
-
+	background-color: #BFC3BA;
 }
 #secondnav ul{
-
+	padding: 15px 0;
+	text-align: center;
+	list-style: none;
 }
 #secondnav li{
 
 }
 #secondnav a:link{
-	color: #;
+	color: #2F2235;
+	text-decoration: none;
 	/* other styles */
 }
 #secondnav a:visited{
-	color: #;
+	color: #2F2235;
 	/* other styles */
 }
-#maisecondnavnnav a:hover{
-	color: #;
+#secondnav a:hover{
+	color: #60495A;
 	/* other styles */
 }
 #secondnav a:active{
-	color: #;
+	color: #ffffff;
 	/* other styles */
 }
 
@@ -99,39 +112,39 @@ h1,h2,h3,h4,h5,h6{
 
 /* True for all headings */
 h1, h2, h3 ,h4, h5, h6{
-	color: #;
+	color: #BFC3BA;
 }
 
 
 /* Style for individual headings */
 h1{
-
+	font-size: 4em;
 }
 
 h2{
-
+	font-size: 3em;
 }
 
 h3{
-
+	font-size: 2.5em;
 }
 
 h4{
-
+	font-size: 2em;
 }
 
 h5{
-
+	font-size: 2em;
 }
 
 h6{
-
+	font-size: 2em;
 }
 
 
 /* List Styles */
 ul{
-
+	list-style: none;
 }
 ul li{
 
@@ -148,16 +161,17 @@ ol li{
 /* Non-Navigational Link Styles */
 /* This is for all default links on your page */
 a:link{
-
+	text-decoration: none;
+	color: #BFC3BA;
 }
 a:visited{
-
+	color: #BFC3BA;
 }
 a:hover{
-
+	color: #60495A;
 }
 a:active{
-
+	color: #BFC3BA;
 }
 
 /* This is for secondary link styles (possibly in your footer, etc) */
@@ -184,7 +198,7 @@ p{
 
 /* Figure and Figcaption Styles */
 figure{
-
+	text-align: center;
 }
 figure img{
 
@@ -201,7 +215,10 @@ figcaption{
 	text-align: center;
 }
 
-
+.paragraphsNstuff{
+	background-color: #3F3244;
+	color: #BFC3BA;
+}
 
 
 
