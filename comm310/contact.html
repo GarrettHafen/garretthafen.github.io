@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JaggerNaughts Creative Studio</title>
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
+</head>
+<body>
+	<header>
+		<div class="logo" id="top">
+			<img src="images/logo.png" alt="JNCS Logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Submit a Quote Request</h2>
+		<div class="form">
+			<form class="coolForm" method="post">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" onfocusout="singleValidation(id)">
+					<label for="channel">Channel Name <span data-info="Enter your channel name here so we can look it up and see how awesome you are!" class="moreInfo">&#9432;</span></label>
+					<input type="text" name="channel" id="channel" onfocusout="singleValidation(id)">
+					
+					<label for="email">Email Address</label>
+					<input type="text" name="email" id="email" onfocusout="singleValidation(id)">
+					
+					<label for="software">Streaming Software<span data-info="What software do you use to stream?" class="moreInfo">&#9432;</span> </label>
+					<input type="text" name="software" id="software" onfocusout="singleValidation(id)">
+
+					<p>Use this section to provide as much information as you can, such as: streaming platform, streaming software. What kind of overlay/package are you looking for? Do you have any examples of what you want your overlay to look like? Any information about your expected budget would be appreciated.</p>
+					<label for="otherInfo">Additional Info:</label>
+					<textarea rows="7" id="otherInfo" onfocusout="singleValidation(id)"></textarea>
+
+					<div class="fakeButton" onclick="resetErrors(); return false " >Gimme dat Swag</div>
+				</form>
+
+				<div class="thankYou" id="thankYou">
+					<div class="front">
+						<span class="closeThankYou" id="closeThankYou" onclick="setTimeout(removeThankYou, 1500); flip();"></span>
+						<h1>Thank you</h1>
+						<p>All you need to do now is wait, we'll get back to you soon so keep an eye on the horizon.......or just your email.</p>
+						<img class="thumbsUp" src="images/thumbsUpEmote.png">
+					</div>
+					<div class="back" id="back"></div>
+				</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footerNav">
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+		</div>
+		<div class="coolSymbol">*</div>
+		<div class="copyRightStuff">
+			<p>All content &copy; JaggerNaughts Creative Studio</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="scripts/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/*dark purple #2F2235*/
+/*onyx        #3F3244*/
+/*silver      #BFC3BA*/
+/*egg plant   #60495A*/
+
+body{
+	color: #BFC3BA;
+}
+
+main{
+	text-align: center;
+}
+main h2{
+	color: #BFC3BA;
+}
+
+.coolForm{
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	width: 45%;
+
+}
+.coolForm label{
+	text-align: left;
+	padding-top: 15px;
+}
+.coolForm input {
+	padding-bottom: 10px;
+}
+.coolForm textarea{
+	margin-bottom: 20px;
+	resize: none;
+	font-size: .75em;
+}
+.fakeButton{
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    color: #BFC3BA;
+    text-align: center;
+    background: #60495A;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    margin-bottom: 100px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    line-height: 1.5;
+    font-size: 2em;
+    /*box-shadow: 1px 1px 3px 0px rgba(255,255,255,.5);*/
+    box-shadow: 0 4px #999;
+}
+.fakeButton:active{
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.coolForm p{
+	margin: 30px 0 -5px;
+	text-align: justify;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+}
+
+/* effect-shine */
+/*.fakeButton:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+}*/
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.wrong{
+	border: 1px solid red;
+}
+.wiggle{
+	animation: wiggle 2s 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both ;
+	overflow: hidden;
+}
+
+@keyframes wiggle{
+	0% {
+		transform:rotate(3deg);
+	}
+	10% {
+		transform:rotate(-3deg);
+	}
+	20% {
+		transform:rotate(3deg);
+	}
+	30% {
+		transform:rotate(-3deg);
+	}
+	40% {
+		transform:rotate(3deg);
+	}
+	45% {
+		transform:rotate(-3deg);
+	}
+	50% {
+		transform:rotate(3deg);
+	}
+	55% {
+		transform:rotate(-3deg);
+	}
+	60% {
+		transform:rotate(3deg);
+	}
+	70% {
+		transform:rotate(-3deg);
+	}
+	80% {
+		transform:rotate(3deg);
+	}
+	90% {
+		transform:rotate(-3deg);
+	}
+	100% {
+		transform:rotate(0deg);
+	}
+}
+
+/*---------------thankYou---------------*/
+.thankYou, .back{
+	width:500px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 36.75%;
+	background-color: darkgrey;
+	border-radius: 15px;
+	display: none;
+	box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.75);
+	perspective: 1000px;
+	transition: 2s;
+	transform-style: preserve-3d;
+	color: #2F2235;
+	
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front{
+	z-index: 2;
+}
+.back{
+	transform: rotateY(180deg);
+}
+.closeThankYou {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.closeThankYou:hover {
+  opacity: 1;
+}
+.closeThankYou:before, .closeThankYou:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.closeThankYou:before {
+  transform: rotate(45deg);
+}
+.closeThankYou:after {
+  transform: rotate(-45deg);
+}
+.thumbsUp{
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+	animation: jiggle 2s infinite;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both ;
+	overflow: hidden;
+}
+
+@keyframes jiggle{
+	0% {
+		transform:rotate(3deg);
+	}
+	10% {
+		transform:rotate(-3deg);
+	}
+	20% {
+		transform:rotate(3deg);
+	}
+	30% {
+		transform:rotate(-3deg);
+	}
+	40% {
+		transform:rotate(3deg);
+	}
+	45% {
+		transform:rotate(-3deg);
+	}
+	50% {
+		transform:rotate(3deg);
+	}
+	55% {
+		transform:rotate(-3deg);
+	}
+	60% {
+		transform:rotate(3deg);
+	}
+	70% {
+		transform:rotate(-3deg);
+	}
+	80% {
+		transform:rotate(3deg);
+	}
+	90% {
+		transform:rotate(-3deg);
+	}
+	100% {
+		transform:rotate(3deg);
+	}
+
+}
+/*---------------thankYou---------------*/
+
+/*---------------infoLabels---------------*/
+.moreInfo {
+  padding: 0 0.4em;
+  font-style: normal;
+  position: relative;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+  
+}
+.moreInfo::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; left: 0;
+  opacity: 0;
+  width: 230px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+.moreInfo::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+.moreInfo:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+.moreInfo:hover::after,
+.moreInfo:hover::before {opacity: 1;}
+.moreInfo:hover::after {top: 30px;}
+.moreInfo:hover::before {top: 20px;}
+/*---------------infoLabels---------------*/
