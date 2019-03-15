@@ -1,0 +1,120 @@
+/*dark purple #2F2235*/
+/*onyx        #3F3244*/
+/*silver      #BFC3BA*/
+/*egg plant   #60495A*/
+
+.aboutMe {
+	text-align: center;
+	color: #BFC3BA;
+}
+.aboutMe h2{
+	margin-bottom: 0;
+}
+.aboutMe h4{
+	margin: 0 0 50px;
+}
+a{
+	text-decoration: none;
+	color: #BFC3BA;
+}
+.content{
+	width: 680px;
+	height: 700px;
+	float: left;
+	margin: 10px;
+	/*background-color: grey;*/
+}
+.empty{
+	width: 300px;
+	height: 700px;
+	float: left;
+	margin: 10px;
+	/*background-color: white;*/
+}
+.twitter img, .twitch img, .youtube img{
+	position: relative;
+	top: 22px;
+	left: -10px;
+}
+/*---------------Twitter---------------*/
+.twitter .content img, .twitter .content h3{
+	display: inline-block;
+}
+.twitter .description, .twitter .tweet{
+	float: left;
+}
+.twitter .aboutContentHeader{
+	height: 100px;
+}
+.twitter .aboutContentContent{
+	height: 600px;
+}
+.tweet{
+	margin: 25px;
+	padding: 0;
+}
+.twitter .description{
+	width: 250px;
+	top: 25%;
+	position: relative;
+}
+
+/*---------------YouTube---------------*/
+.youtube .content{
+	width: 725px;
+	height: 600px;
+}
+.youtube .empty{
+	width: 255px;
+	height: 600px;
+}
+.youtube .content img, .youtube .content h3{
+	display: inline-block;
+}
+.youtube .description, .youtube .youtubeVid{
+	float: left;
+	top: 25%;
+	position: relative;
+	padding: 25px 0 25px 25px;
+}
+.youtube .aboutContentHeader{
+	height: 100px;
+	margin: 50px 0 -100px;
+}
+.youtube .aboutContentContent{
+	height: 600px;
+}
+.youtube .description{
+	width: 250px;
+	
+}
+
+/*---------------twitch---------------*/
+.twitch .content{
+	width: 725px;
+	height: 600px;
+}
+.twitch .empty{
+	width: 255px;
+	height: 600px;
+}
+.twitch .content img, .twitch .content h3{
+	display: inline-block;
+}
+.twitch .description, .twitch .twitchFeed{
+	float: left;
+	top: 25%;
+	position: relative;
+	padding: 25px 0 25px 25px;
+}
+.twitch .aboutContentHeader{
+	height: 100px;
+	margin: 50px 0 -100px;
+}
+.twitch .aboutContentContent{
+	height: 600px;
+}
+.twitch .description{
+	width: 250px;
+	
+}
