@@ -12,6 +12,11 @@ main{
 }
 main h2{
 	color: #BFC3BA;
+	margin-bottom: 0;
+}
+.description{
+	width: 400px;
+	margin: -5px auto 40px;
 }
 
 .coolForm{
