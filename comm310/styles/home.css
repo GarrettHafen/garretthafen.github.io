@@ -20,6 +20,9 @@ h2{
 h3{
 	font-size: 2em;
 }
+h4{
+	font-size: 1.5em;
+}
 
 /*---------------header---------------*/
 header{
@@ -164,7 +167,7 @@ main:after {
 
 /*---------------footer---------------*/
 footer{
-	height: 150px;
+	height: 200px;
 	background-color: #BFC3BA;
 	box-shadow: -2px 0px 15px 0px rgba(255,255,255,.75);
 	text-align: center;
@@ -176,7 +179,7 @@ footer ul{
 footer ul li{
 	list-style: none;
 }
-footer ul li a:link, footer ul li a:visited{
+footer ul li a:link, footer ul li a:visited, .coolSymbol, .copyRightStuff{
 	text-decoration: none;
 	color: #2F2235;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
