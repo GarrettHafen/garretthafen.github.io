@@ -28,6 +28,9 @@ main h2{
 	width: 45%;
 
 }
+.popUpThankYou{
+	font-size: 2em;
+}
 .coolForm label{
 	text-align: left;
 	padding-top: 15px;
@@ -136,6 +139,7 @@ main h2{
 	perspective: 1000px;
 	transition: 2s;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 	color: #2F2235;
 	
 }
@@ -150,6 +154,7 @@ main h2{
 }
 .back{
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 }
 .closeThankYou {
   position: absolute;
@@ -172,9 +177,11 @@ main h2{
 }
 .closeThankYou:before {
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 .closeThankYou:after {
   transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .thumbsUp{
 	width: 300px;

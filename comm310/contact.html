@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>JaggerNaughts Creative Studio</title>
+	<title>JaggerNaughts Creative Studio - Quote</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link rel="stylesheet" type="text/css" href="styles/contact.css">
 </head>
@@ -15,12 +16,15 @@
 				<li><a href="index.html">Portfolio</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="about.html">About</a></li>
+				<li><a href="school.html">School</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<!-- form should validation each field individually and when the field is entered or left -->
 		<h2>Submit a Quote Request</h2>
-		<p class="description">Want some sweet graphics of your own? Fill out the form below with as much information as possible to ensure a quick and accurate quote.</p>
+		<p class="description">Want some sweet graphics of your own? Fill out the form below with as much information as possible to ensure a quick and accurate quote response.</p>
 		<div class="form">
 			<form class="coolForm" method="post">
 					<label for="name">Name</label>
@@ -40,11 +44,11 @@
 
 					<div class="fakeButton" onclick="resetErrors(); return false " >Gimme dat Swag</div>
 				</form>
-
+				<!-- this is the modal that appears after a successful form submission -->
 				<div class="thankYou" id="thankYou">
 					<div class="front">
 						<span class="closeThankYou" id="closeThankYou" onclick="setTimeout(removeThankYou, 1500); flip();"></span>
-						<h1>Thank you</h1>
+						<h1 class="popUpThankYou">Thank you</h1>
 						<p>All you need to do now is wait, we'll get back to you soon so keep an eye on the horizon.......or just your email.</p>
 						<img class="thumbsUp" src="images/thumbsUpEmote.png" alt="thumbs Up">
 					</div>
