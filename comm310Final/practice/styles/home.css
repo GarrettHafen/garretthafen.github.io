@@ -1,0 +1,114 @@
+body{
+	margin: 0;
+	font-family: "Arial", Gadget, sans-serif;	
+	background-color: #f8ffb0;
+}
+header{
+	top: 0;
+	min-width: 880px;
+}
+.brownTop{
+	background-color: #52471b;
+	height: 70px;
+	border-bottom: 6px solid #87752d;
+	z-index: -1;
+}
+.honeyComb{
+	background-image: url("../images/comb.jpg");
+	height:85px;
+	z-index: -1;
+}
+.underNav{
+	background-color: #87752d;
+	border-top: 2px solid #554a1b;
+	border-bottom: 2px solid #554a1b;
+	height:39px;
+	z-index: -1;
+}
+.logo{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 28px 0 14px;
+	min-width: 870px;
+}
+.logo h1{
+	margin: 0;
+	font-size:1em;
+	font-weight: lighter;
+	color: #87752d;
+
+}
+nav{
+	position: absolute;
+	height:39px;
+	width: 100%;
+}
+nav ul{
+	width: 870px;
+	text-align: center;
+	margin: auto;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	padding: 12px 15px 0;
+}
+nav li a{
+	text-decoration: none;
+	color: #f8ffb0;
+	font-weight: bold;
+}
+
+main{
+	width: 870px;
+	margin: 5px auto;
+	display: block;
+	background-color: #f8ffb0;
+	padding-left: 20px;
+}
+main figure{
+	display: inline-block;
+	margin: 70px 4px 0;
+	padding: 5px 6px 0;
+	background-color: #87752d;
+	border-radius: 5px;
+}
+main figure figcaption{
+	height: 35px;
+	padding-top: 10px;
+	text-align: center;
+	color: #f8ffb0;
+	font-size: 1.25em;
+}
+main blockquote{
+	margin: 50px 140px 150px;
+	font-size: 1.75em;
+	font-weight: bold;
+	color: #52471b;
+	text-align: center;
+}
+footer{
+	min-width: 880px;
+}
+.footerBackground{
+	background-color: #52471b;
+	border-top: 6px solid #87752d;
+	height:115px;
+	z-index: -1;
+}
+.footerInfo{
+	position: absolute;
+	width: 100%;
+}
+footer p{
+	text-align: center;
+	font-size: 1.15em;
+	color: #cfaf13;
+	margin: 0 auto;
+	font-weight: bold;
+	width: 100%;
+}
+footer p:first-child{
+	padding-top: 41px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JaggerNaughts Creative Studio - About</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
+	<link rel="stylesheet" type="text/css" href="styles/about.css">
+</head>
+<body>
+	<header>
+		<div class="logo" id="top">
+			<img src="images/logo.png" alt="JNCS Logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="school.html">School</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="aboutMe">
+			<h2>All About Me...</h2>
+			<h4>Who is JaggerNaught? Well you wont have to try very hard to find my real name, I'm not very careful with it but the tl;dr is that I'm a wannabe comedian who is trying to leave his mark on as many people as possible. I've always been pretty good at making people smile, and this is my life's quest. It started out with being the class clown in grade school, then I found YouTube and naturally made my way to Twitch. Eventually, I want to find my way to the live stage and become a stand up comedian. Until then, and until I strike it rich in the online community, I am a Web Developer and Designer with my wife, working for a small web development company. Gotta pay them bills! I have a 2 year old son and am living the dream. Thats enough about me, if you wanna know more, drop my a stream or leave a comment on a video, I'd be happy to chat!</h4>
+		</section>
+		<!-- i didn't write the code for the tweet, but referenced their api -->
+		<!--this iframe should show the live footage when/if i ever go live. haven't really tested it yet 4/1/19  -->
+		<section class="twitter">
+			<div class="aboutContent">
+				<div class="aboutContentHeader">
+					<img src="images/twitter.png" alt="twitter icon">
+					<h3><a href="https://www.twitter.com/JaggerNaughtCS" target="_blank">@JaggerNaughtCS</a></h3>
+				</div>
+				<div class="aboutContentContent">
+					<div class="tweet"><a class="twitter-timeline" href="https://twitter.com/JaggerNaughtCS" target="_blank" data-tweet-limit="1" data-width="340" ></a></div>
+					<div class="description">
+						<p>Want more insider information about me IRL or looking for stream/youtube updates? Then follow me on twitter, sometimes I even say funny stuff!</p>
+					</div>
+				</div>
+			</div>
+			<div class="empty"></div>
+		</section>
+		<section class="youtube">
+			<div class="empty"></div>
+			<div class="aboutContent">
+				<div class="aboutContentHeader">
+					<img src="images/youtube.png" alt="youtube icon">
+					<h3><a href="https://www.youtube.com/jaggernaught" target="_blank">JaggerNaught</a></h3>
+				</div>
+				<div class="aboutContentContent">
+					<div class="description">
+						<p>Want some JaggerNaught goodness, but I'm not currently streaming? Then head over to my YouTube channel for an archive of terrible videos with really bad comedy.... sorry about that. Hey! My Mom thinks I'm funny...</p>
+					</div>
+					<div class="youtubeVid">
+						<!--this iframe should show the live footage when/if i ever go live. haven't really tested it yet 4/1/19  -->
+						    <iframe id="youtube_video" width="400" height="225"></iframe>
+					</div>	
+				</div>
+			</div>
+			
+		</section>
+		<section class="twitch">
+			<div class="aboutContent">
+				<div class="aboutContentHeader">
+					<img src="images/twitch.png" alt="twitch icon">
+					<h3><a href="https://www.twitch.tv/jaggernaught" target="_blank">JaggerNaught</a></h3>
+				</div>
+				<div class="aboutContentContent">
+					<div class="twitchFeed">
+						<!-- this iframe should show the live footage when/if i ever go live. haven't really tested it yet 4/1/19 -->
+						    <iframe
+						    src="https://player.twitch.tv/?channel=jaggernaught"
+						    height="225"
+						    width="400">
+						</iframe>
+					</div><div class="description">
+						<p>What to interact with me in real time, then head over to <a href="https://www.twitch.tv/jaggernaught" target="_blank">Twitch.tv/JaggerNaught</a> and say hello!</p>
+					</div>	
+				</div>
+			</div>
+			<div class="empty"></div>
+		</section>
+	</main>
+	<footer>
+		<div class="footerNav">
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="school.html">School</a></li>
+			</ul>
+		</div>
+		<div class="coolSymbol">*</div>
+		<div class="copyRightStuff">
+			<p>All content &copy; JaggerNaughts Creative Studio</p>
+		</div>
+	</footer>
+	
+	<script async src="http://platform.twitter.com/widgets.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/about.js"></script>
+
+</body>
+</html>
