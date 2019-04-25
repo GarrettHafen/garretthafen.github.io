@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body{
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif
+}
+h1, h2{
+    font-family: 'Lora', serif;
+}
+
+/*---------------header stuff---------------*/
+header{
+    background-color: #6495ED;
+    height: 265px;
+    text-align: right;
+}
+header hr{
+    width: 80%;
+}
+header ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+header h1{
+    padding-top:55px;
+    padding-right: 43px;
+}
+header nav{
+    padding-right: 43px;
+}
+header a, header a:visited{
+    text-decoration: none;
+    color: #FAEBD7; 
+}
+header a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+header a:active{
+    color: #DEB887;
+    border-bottom:none;
+}
+
+/*---------------main stuff---------------*/
+main a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    background-color: #FAEBD7;
+    height: 100%;
+    padding-top: 30px;
+}
+main article{
+    width: 350px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 3px 3px 5px 0px rgba(209,209,209,1);
+}
+article div{
+    padding: 40px 0 0 35px;
+    color: #7c7c7c;
+}
+article section{
+    padding: 0 35px 0 35px;
+    text-align: left;
+}
+article section h2{
+    margin:10px 0 75px 0;
+    width: 280px;
+}
+article section figure img{
+    width:200px;
+    margin: auto;
+    display: block;
+}
+article section p{
+    padding-bottom: 50px;
+}
+main p a, main p a:visited{
+    text-decoration: none;
+    color: #6495ED; 
+}
+main p a:hover{
+    border-bottom: 1px solid #6495ED;
+}
+main p a:active{
+    color: #DEB887;
+    border-bottom:none;
+}
+
+main h2 a, main h2 a:visited{
+    text-decoration: none;
+    color: black; 
+}
+main h2 a:hover{
+    color: #6495ED;
+    border-bottom: 1px solid #6495ED;
+}
+main h2 a:active{
+    color: #DEB887;
+    border-bottom:none;
+}
+
+/*---------------large Screens---------------*/
+
+@media screen and (min-width: 900px){
+    header{
+        float: left;
+        height: 100%;
+        width: 275px;
+    }
+    main{
+        margin-left: 275px;
+    }
+
+    main article{
+        width: 600px;
+    }
+    article section h2{
+        width: 80%;
+    }
+
+}
