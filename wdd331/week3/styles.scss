@@ -1,0 +1,138 @@
+//variables
+$responsive: 900px;
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body{
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif;
+    height:100%;
+}
+h1, h2{
+    font-family: 'Lora', serif;
+}
+
+/*---------------header stuff---------------*/
+header{
+    background-color: #6495ED;
+    height: 265px;
+    text-align: right;
+
+    hr{
+        width: 80%;
+    }
+    ul li{
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    h1{
+        padding-top:55px;
+        padding-right: 43px;
+    }
+    nav{
+        padding-right: 43px;
+    }
+    a, a:visited{
+        text-decoration: none;
+        color: #FAEBD7; 
+    }
+    a:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    a:active{
+        color: #DEB887;
+        border-bottom:none;
+    }
+    @media screen and (min-width: $responsive){
+        &{
+            float: left;
+            height: 100%;
+            width: 275px;
+        }
+        &:after{
+            clear: both;
+        }
+    }
+}
+
+/*---------------main stuff---------------*/
+
+main{
+    background-color: #FAEBD7;
+    padding-top: 30px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    p{
+
+        a, a:visited{
+        text-decoration: none;
+        color: #6495ED; 
+        }
+        a:hover{
+            border-bottom: 1px solid #6495ED;
+        }
+        a:active{
+            color: #DEB887;
+            border-bottom:none;
+        }
+    }
+
+    h2{
+         a, a:visited{
+        text-decoration: none;
+        color: black; 
+        }
+        a:hover{
+            color: #6495ED;
+            border-bottom: 1px solid #6495ED;
+        }
+        a:active{
+            color: #DEB887;
+            border-bottom:none;
+        }
+    }
+    @media screen and (min-width: $responsive){
+        &{
+            margin-left: 275px;
+            padding-bottom: 15px;
+        }
+    }
+}
+article{
+    width: 350px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 3px 3px 5px 0px rgba(209,209,209,1);
+    div{
+        padding: 40px 0 0 35px;
+        color: #7c7c7c;
+    }
+    section{
+        padding: 0 35px 0 35px;
+        text-align: left;
+        h2{
+            margin:10px 0 75px 0;
+            width: 280px;
+        }
+        figure img{
+            width:200px;
+            margin: auto;
+            display: block;
+        }
+        p{
+            padding-bottom: 50px;
+        }
+        @media screen and (min-width: $responsive){
+            & h2{
+                width: 80%;
+            }
+        }
+    }
+    @media screen and (min-width: $responsive){
+        &{
+            width: 600px;
+        }
+    }
+}
