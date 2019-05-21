@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Lora");
 body {
-  margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   height: 100%;
+  margin: 0;
 }
 
 h1, h2 {
@@ -22,24 +21,24 @@ header ul li {
   list-style: none;
   padding-bottom: 10px;
 }
-header h1 {
-  padding-top: 55px;
+header .headerOne {
   padding-right: 43px;
+  padding-top: 55px;
 }
 header nav {
   padding-right: 43px;
 }
 header a, header a:visited {
-  text-decoration: none;
   color: #FAEBD7;
+  text-decoration: none;
 }
 header a:hover {
-  color: white;
   border-bottom: 1px solid white;
+  color: white;
 }
 header a:active {
-  color: #DEB887;
   border-bottom: none;
+  color: #DEB887;
 }
 @media screen and (min-width: 900px) {
   header {
@@ -58,31 +57,31 @@ main {
   padding-top: 30px;
 }
 main a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 main p a, main p a:visited {
-  text-decoration: none;
   color: #6495ED;
+  text-decoration: none;
 }
 main p a:hover {
   border-bottom: 1px solid #6495ED;
 }
 main p a:active {
-  color: #DEB887;
   border-bottom: none;
+  color: #DEB887;
 }
-main h2 a, main h2 a:visited {
-  text-decoration: none;
+main .headerTwo a, main .headerTwo a:visited {
   color: black;
+  text-decoration: none;
 }
-main h2 a:hover {
-  color: #6495ED;
+main .headerTwo a:hover {
   border-bottom: 1px solid #6495ED;
+  color: #6495ED;
 }
-main h2 a:active {
-  color: #DEB887;
+main .headerTwo a:active {
   border-bottom: none;
+  color: #DEB887;
 }
 @media screen and (min-width: 900px) {
   main {
@@ -92,33 +91,33 @@ main h2 a:active {
 }
 
 article {
-  width: 350px;
   background-color: white;
+  box-shadow: 3px 3px 5px 0 #d1d1d1;
   margin: auto;
-  box-shadow: 3px 3px 5px 0px #d1d1d1;
+  width: 350px;
 }
 article div {
-  padding: 40px 0 0 35px;
   color: #7c7c7c;
+  padding: 40px 0 0 35px;
 }
 article section {
   padding: 0 35px 0 35px;
   text-align: left;
 }
-article section h2 {
+article section .headerTwo {
   margin: 10px 0 75px 0;
   width: 280px;
 }
 article section figure img {
-  width: 200px;
-  margin: auto;
   display: block;
+  margin: auto;
+  width: 200px;
 }
 article section p {
   padding-bottom: 50px;
 }
 @media screen and (min-width: 900px) {
-  article section h2 {
+  article section .headerTwo {
     width: 80%;
   }
 }

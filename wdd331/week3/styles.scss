@@ -1,11 +1,10 @@
 //variables
 $responsive: 900px;
 
-@import url('https://fonts.googleapis.com/css?family=Lora');
 body{
-    margin:0;
     font-family: Helvetica, Arial, sans-serif;
     height:100%;
+    margin:0;
 }
 h1, h2{
     font-family: 'Lora', serif;
@@ -24,24 +23,24 @@ header{
         list-style: none;
         padding-bottom: 10px;
     }
-    h1{
-        padding-top:55px;
+    .headerOne{
         padding-right: 43px;
+        padding-top:55px;
     }
     nav{
         padding-right: 43px;
     }
     a, a:visited{
-        text-decoration: none;
         color: #FAEBD7; 
+        text-decoration: none;
     }
     a:hover{
-        color: white;
         border-bottom: 1px solid white;
+        color: white;
     }
     a:active{
-        color: #DEB887;
         border-bottom:none;
+        color: #DEB887;
     }
     @media screen and (min-width: $responsive){
         &{
@@ -61,36 +60,36 @@ main{
     background-color: #FAEBD7;
     padding-top: 30px;
     a{
-        text-decoration: none;
         color: black;
+        text-decoration: none;
     }
     p{
 
         a, a:visited{
-        text-decoration: none;
-        color: #6495ED; 
+            color: #6495ED; 
+            text-decoration: none;
         }
         a:hover{
             border-bottom: 1px solid #6495ED;
         }
         a:active{
-            color: #DEB887;
             border-bottom:none;
+            color: #DEB887;
         }
     }
 
-    h2{
+    .headerTwo{
          a, a:visited{
-        text-decoration: none;
-        color: black; 
+            color: black; 
+            text-decoration: none;
         }
         a:hover{
-            color: #6495ED;
             border-bottom: 1px solid #6495ED;
+            color: #6495ED;
         }
         a:active{
-            color: #DEB887;
             border-bottom:none;
+            color: #DEB887;
         }
     }
     @media screen and (min-width: $responsive){
@@ -101,31 +100,31 @@ main{
     }
 }
 article{
-    width: 350px;
     background-color: white;
+    box-shadow: 3px 3px 5px 0 rgba(209,209,209,1);
     margin: auto;
-    box-shadow: 3px 3px 5px 0px rgba(209,209,209,1);
+    width: 350px;
     div{
-        padding: 40px 0 0 35px;
         color: #7c7c7c;
+        padding: 40px 0 0 35px;
     }
     section{
         padding: 0 35px 0 35px;
         text-align: left;
-        h2{
+        .headerTwo{
             margin:10px 0 75px 0;
             width: 280px;
         }
         figure img{
-            width:200px;
-            margin: auto;
             display: block;
+            margin: auto;
+            width:200px;
         }
         p{
             padding-bottom: 50px;
         }
         @media screen and (min-width: $responsive){
-            & h2{
+            & .headerTwo{
                 width: 80%;
             }
         }
